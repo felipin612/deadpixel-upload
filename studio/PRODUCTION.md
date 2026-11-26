@@ -7,6 +7,7 @@ Setup in a fresh session: attach repo felipin612/deadpixel-upload (push), clone 
 |---|---|---|---|
 | EP01 | SALTMARSH | fog town, a new house each night = places you lived | Slot 3 save, 03/03/2004, the tester (dead pixel on his eye) |
 | EP02 | NIGHTWALK | walking sim, never look back, "steps behind you" | Tester's name: T. Rowe, missing since 03/03/2004 |
+| EP03 | STILLWATER | ice-fishing sim, "if the line goes still, cut it"; the catch log returns what you lost | Studio address: an old boathouse, 14 Merrow Road (Merrow Lake); T. Rowe's memory card is the last uncaught entry |
 Logo loses one more pixel each episode (drawLogo missing = episode number + 2).
 
 

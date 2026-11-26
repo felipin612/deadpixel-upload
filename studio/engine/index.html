@@ -7,7 +7,8 @@
 import * as THREE from 'three';
 import { SCENES } from './scenes.js';
 import { SCENES2 } from './scenes2.js';
-Object.assign(SCENES, SCENES2);
+import { SCENES3 } from './scenes3.js';
+Object.assign(SCENES, SCENES2, SCENES3);
 import { initPost, renderPost } from './post.js';
 
 const params = new URLSearchParams(location.search);

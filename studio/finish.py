@@ -22,8 +22,14 @@ if caps is not None:
     chain = drawtext_chain([tuple(x) for x in caps['words']], W, H, FONT, caps.get('yellow', []), y_frac=0.68)
     top = []
     if title:
-        top.append(f"drawtext=fontfile={FONT}:text='{esc(title.upper())}':fontsize=52:fontcolor=white:borderw=5:bordercolor=black"
-                   f":x=(w-tw)/2:y=h*0.17:enable='between(t\\,0\\,5)'")
+        # wrap long titles to two lines so they never run off the 1080 frame (Anton ~0.5 em per char)
+        words = title.upper().split(); lines = [' '.join(words)]
+        if len(lines[0]) * 52 * 0.5 > W * 0.88:
+            k = len(words) // 2 + (1 if len(' '.join(words[:len(words)//2])) < len(' '.join(words[len(words)//2:])) - 6 else 0)
+            lines = [' '.join(words[:k]), ' '.join(words[k:])]
+        for i, ln in enumerate(lines):
+            top.append(f"drawtext=fontfile={FONT}:text='{esc(ln)}':fontsize=56:fontcolor=white:borderw=5:bordercolor=black"
+                       f":x=(w-tw)/2:y=h*0.17+{i * 70}:enable='between(t\\,0\\,5)'")
     if caps.get('part'):
         top.append(f"drawtext=fontfile={FONT}:text='{esc(caps['part'])}':fontsize=76:fontcolor=yellow:borderw=5:bordercolor=black:x=(w-tw)/2:y=h*0.09")
     vf = ','.join(top + chain)
