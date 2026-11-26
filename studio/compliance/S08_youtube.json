@@ -1,0 +1,47 @@
+{
+ "id": "S08",
+ "kind": "short",
+ "platform": "youtube",
+ "video": "S08.mp4",
+ "checked_at": "2026-11-26T14:44:55-03:00",
+ "publish_at": "2026-11-26T14:44-03:00",
+ "pass": true,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R6-hook-at-zero",
+   "research": "r002",
+   "ok": true,
+   "detail": "leading silence 0.00 s"
+  },
+  {
+   "rule": "R7-hook-onscreen",
+   "research": "r002",
+   "ok": true,
+   "detail": "first caption at 0.00 s"
+  },
+  {
+   "rule": "R8-hook-short",
+   "research": "r002",
+   "ok": true,
+   "detail": "9 words: 'Never reel in when the fishing line goes still.'"
+  },
+  {
+   "rule": "R9-no-slow-open",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R11-strong-first-frame",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  }
+ ]
+}

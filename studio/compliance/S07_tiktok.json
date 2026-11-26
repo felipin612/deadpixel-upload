@@ -1,0 +1,77 @@
+{
+ "id": "S07",
+ "kind": "short",
+ "platform": "tiktok",
+ "video": "S07.mp4",
+ "checked_at": "2026-11-26T14:53:59-03:00",
+ "publish_at": "2026-11-27T12:00-03:00",
+ "pass": true,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R2-tiktok-spacing",
+   "research": "r001",
+   "ok": true,
+   "detail": "0 TikToks that day, nearest 22.4 h"
+  },
+  {
+   "rule": "R3-content-check",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R4-ai-label",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R5-exp-no-youtube",
+   "research": "r001",
+   "ok": true,
+   "detail": "first TikTok of the day: caption must not mention YouTube"
+  },
+  {
+   "rule": "R6-hook-at-zero",
+   "research": "r002",
+   "ok": true,
+   "detail": "leading silence 0.00 s"
+  },
+  {
+   "rule": "R7-hook-onscreen",
+   "research": "r002",
+   "ok": true,
+   "detail": "first caption at 0.00 s"
+  },
+  {
+   "rule": "R8-hook-short",
+   "research": "r002",
+   "ok": true,
+   "detail": "9 words: \"This PS2 fishing game caught my dead father's watch.\""
+  },
+  {
+   "rule": "R9-no-slow-open",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R10-no-judge-24h",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R11-strong-first-frame",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  }
+ ]
+}

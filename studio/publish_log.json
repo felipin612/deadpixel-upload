@@ -103,5 +103,47 @@
   "sha": "404e8088901f9ca8a465ca0fc3df39221b6320b2de9baf7836c5eb277a46965a",
   "post_id": "24bZNSRNpsk",
   "at": "2026-11-26T00:00-03:00"
+ },
+ {
+  "id": "S07",
+  "platform": "youtube",
+  "sha": "fd36f1804e7dc5860a7e56dcdd87c8643232148112591fb8ef72a8d694eb2dcf",
+  "post_id": "0S9o5Sl4E8c",
+  "at": "2026-11-26T14:51-03:00"
+ },
+ {
+  "id": "S08",
+  "platform": "youtube",
+  "sha": "b044ff2d2daac868a9764b574630eee6cc8873d1d9b6cfb19ee8461cbac5d7bf",
+  "post_id": "0A3cyO86L4Q",
+  "at": "2026-11-26T14:51-03:00"
+ },
+ {
+  "id": "S07",
+  "platform": "tiktok",
+  "sha": "fd36f1804e7dc5860a7e56dcdd87c8643232148112591fb8ef72a8d694eb2dcf",
+  "post_id": "7712540132787637522",
+  "at": "2026-11-27T12:00-03:00"
+ },
+ {
+  "id": "S08",
+  "platform": "tiktok",
+  "sha": "b044ff2d2daac868a9764b574630eee6cc8873d1d9b6cfb19ee8461cbac5d7bf",
+  "post_id": "7712540621054954753",
+  "at": "2026-11-27T16:00-03:00"
+ },
+ {
+  "id": "S09",
+  "platform": "tiktok",
+  "sha": "4091df5e8af8766f5ff50ac342c0f13faf5ae7181a07a6209026d10358627db9",
+  "post_id": "7712541095342673170",
+  "at": "2026-11-27T20:00-03:00"
+ },
+ {
+  "id": "S09",
+  "platform": "youtube",
+  "sha": "4091df5e8af8766f5ff50ac342c0f13faf5ae7181a07a6209026d10358627db9",
+  "post_id": "RQtfQudFYzE",
+  "at": "2026-11-26T14:59-03:00"
  }
 ]

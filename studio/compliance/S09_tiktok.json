@@ -1,0 +1,77 @@
+{
+ "id": "S09",
+ "kind": "short",
+ "platform": "tiktok",
+ "video": "S09.mp4",
+ "checked_at": "2026-11-26T14:58:04-03:00",
+ "publish_at": "2026-11-27T20:00-03:00",
+ "pass": true,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R2-tiktok-spacing",
+   "research": "r001",
+   "ok": true,
+   "detail": "2 TikToks that day, nearest 4.0 h"
+  },
+  {
+   "rule": "R3-content-check",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R4-ai-label",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R5-exp-no-youtube",
+   "research": "r001",
+   "ok": true,
+   "detail": "not the first TikTok of the day"
+  },
+  {
+   "rule": "R6-hook-at-zero",
+   "research": "r002",
+   "ok": true,
+   "detail": "leading silence 0.00 s"
+  },
+  {
+   "rule": "R7-hook-onscreen",
+   "research": "r002",
+   "ok": true,
+   "detail": "first caption at 0.00 s"
+  },
+  {
+   "rule": "R8-hook-short",
+   "research": "r002",
+   "ok": true,
+   "detail": "9 words: 'The debug map showed where the studio really was.'"
+  },
+  {
+   "rule": "R9-no-slow-open",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R10-no-judge-24h",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R11-strong-first-frame",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  }
+ ]
+}
