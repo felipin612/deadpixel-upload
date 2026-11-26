@@ -1,23 +1,125 @@
 {
-  "_doc": "Rules from Analista/Rastreador research docs. gate.py enforces every rule here before any publish. A solved research doc whose actions are not covered here must get a rule added BEFORE producing. Never delete a rule unless its research doc is 'failed' and a replacement rule exists.",
-  "rules": [
-    {"id": "R1-no-repost", "research": "r001", "platforms": ["tiktok", "youtube"], "check": "auto",
-     "text": "Never upload the same video file twice to the same platform (no delete-and-reupload)."},
-    {"id": "R2-tiktok-spacing", "research": "r001", "platforms": ["tiktok"], "check": "auto",
-     "text": "Max 3 TikToks per calendar day (America/Argentina/Buenos_Aires), at least 3 h between publish/schedule times."},
-    {"id": "R3-content-check", "research": "r001", "platforms": ["tiktok"], "check": "confirm",
-     "text": "Content Check Lite in TikTok Studio read before posting; if it warns 'Content may be restricted', do NOT post: change the video and run the gate again."},
-    {"id": "R4-ai-label", "research": "r001", "platforms": ["tiktok"], "check": "confirm",
-     "text": "'Creator labeled as AI-generated' turned on."},
-    {"id": "R5-exp-no-youtube", "research": "r001", "platforms": ["tiktok"], "check": "auto",
-     "text": "Experiment: the first TikTok of each day has no mention of YouTube in its caption (CTA spoken only)."},
-    {"id": "R6-hook-at-zero", "research": "r002", "platforms": ["tiktok", "youtube"], "kinds": ["short"], "check": "auto",
-     "text": "Spoken hook starts at 0.0 s: leading silence <= 0.15 s."},
-    {"id": "R7-hook-onscreen", "research": "r002", "platforms": ["tiktok", "youtube"], "kinds": ["short"], "check": "auto",
-     "text": "Hook text on screen from frame 1: first caption chunk starts <= 0.3 s."},
-    {"id": "R8-hook-short", "research": "r002", "platforms": ["tiktok", "youtube"], "kinds": ["short"], "check": "auto",
-     "text": "Spoken hook (first sentence of the script) is 10 words or fewer."},
-    {"id": "R9-no-slow-open", "research": "r002", "platforms": ["tiktok", "youtube"], "kinds": ["short"], "check": "confirm",
-     "text": "No logo, title card or slow camera move in the first 2 s (check the frame-1 still)."}
-  ]
+ "_doc": "Rules from Analista/Rastreador research docs. gate.py enforces every rule here before any publish. A solved research doc whose actions are not covered here must get a rule added BEFORE producing. Never delete a rule unless its research doc is 'failed' and a replacement rule exists.",
+ "rules": [
+  {
+   "id": "R1-no-repost",
+   "research": "r001",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "check": "auto",
+   "text": "Never upload the same video file twice to the same platform (no delete-and-reupload)."
+  },
+  {
+   "id": "R2-tiktok-spacing",
+   "research": "r001",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "auto",
+   "text": "Max 3 TikToks per calendar day (America/Argentina/Buenos_Aires), at least 3 h between publish/schedule times."
+  },
+  {
+   "id": "R3-content-check",
+   "research": "r001",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "confirm",
+   "text": "Content Check Lite in TikTok Studio read before posting; if it warns 'Content may be restricted', do NOT post: change the video and run the gate again."
+  },
+  {
+   "id": "R4-ai-label",
+   "research": "r001",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "confirm",
+   "text": "'Creator labeled as AI-generated' turned on."
+  },
+  {
+   "id": "R5-exp-no-youtube",
+   "research": "r001",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "auto",
+   "text": "Experiment: the first TikTok of each day has no mention of YouTube in its caption (CTA spoken only)."
+  },
+  {
+   "id": "R6-hook-at-zero",
+   "research": "r002",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "auto",
+   "text": "Spoken hook starts at 0.0 s: leading silence <= 0.15 s."
+  },
+  {
+   "id": "R7-hook-onscreen",
+   "research": "r002",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "auto",
+   "text": "Hook text on screen from frame 1: first caption chunk starts <= 0.3 s."
+  },
+  {
+   "id": "R8-hook-short",
+   "research": "r002",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "auto",
+   "text": "Spoken hook (first sentence of the script) is 10 words or fewer."
+  },
+  {
+   "id": "R9-no-slow-open",
+   "research": "r002",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "confirm",
+   "text": "No logo, title card or slow camera move in the first 2 s (check the frame-1 still)."
+  },
+  {
+   "id": "R10-no-judge-24h",
+   "research": "r001",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "confirm",
+   "text": "Do not judge, delete or edit-repost a TikTok before 24 h; earlier TikToks of the batch were left untouched."
+  },
+  {
+   "id": "R11-strong-first-frame",
+   "research": "r002",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "confirm",
+   "text": "First frame is the most striking image of the story (not an establishing shot), with the hook as on-screen text (check the frame-1 still)."
+  }
+ ]
 }
