@@ -31,6 +31,10 @@ All 7 TikToks posted 25-26/11 sit at 0 views while the 2 earlier posts got 115-1
 ## Hook rules (research doc r002)
 TikToks with data lost 64-81% of viewers by second 3. First frame = the most striking image of the story with the hook as on-screen text; spoken hook ≤ 10 words starting at 0.0 s (trim leading silence); no logo, no title card, no slow camera move in the first 2 s.
 
+## Daily timeline (all in the cloud, no device)
+09:02 Analista + Rastreador (scheduled task). 09:31 production starts (scheduled task) and works through the stages below; every hour at :31 until 23:31 a continuation run picks up any unfinished stage.
+Progress is saved in `state/<YYYY-MM-DD>.json` ({"stage": ..., "done": [...], "posts": {...}}) and committed after every stage, so a later run resumes exactly where the last one stopped. If today's state says `complete`, the run ends at once.
+
 ## Steps
 0. Publish everything listed in ../PENDING.md first and tick it off.
 1. Run the Fix loop above (dashboard artifact slug 6fffd8bd-049e-490c-aa6b-da7200a14d8c, collection `research`). Nothing else starts until every fix is a rule in rules.json.
@@ -41,5 +45,5 @@ TikToks with data lost 64-81% of viewers by second 3. First frame = the most str
 5. Render with two `worker.py` processes (ports 8771/8772) sharing a job list: shorts first, the episode in parallel.
 6. Finish: `finish.py` (episode) and `finish_short.sh SNN "TITLE"` (shorts). Captions: Anton 68 px at 1080 wide, 3-word chunks, y = 68% of height, white with black outline, yellow for on-screen/dialogue lines; `CAP_BOX=1` adds a dark band when the background is busy or white text.
 7. Covers: `covers.py` — 16:9 (2-3 Anton lines, white + yellow, never repeat title words) and 9:16 for each short.
-8. Gate: `gate.py check` for each video and platform (TikToks: schedule them >= 3 h apart with `--at` and TikTok Studio's schedule option). Only on GATE PASS: publish without asking (the user authorized publishing anything on-topic for the channel), following PUBLISHING.md: YouTube episode (cover, chapters, tags, AI disclosure, playlist The Lost Library), 3 Shorts, 3 TikToks. Verify every post in the content lists. Update Shorts descriptions with the episode link once it is live.
+8. Gate: `gate.py check` for each video and platform (TikToks: schedule them >= 3 h apart with `--at` and TikTok Studio's schedule option). Only on GATE PASS: publish without asking (the user authorized publishing anything on-topic for the channel), following studio/PUBLISHING_CLOUD.md (Buffer, no device; the old browser flow in PUBLISHING.md is only a fallback): YouTube episode (cover, chapters, tags, AI disclosure, playlist The Lost Library), 3 Shorts, 3 TikToks. Verify every post in the content lists. Update Shorts descriptions with the episode link once it is live.
 9. Update the dashboard workers and events; remove the batch from `v/`.
