@@ -1,6 +1,11 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>bridge</title></head><body><p id="s">Preparando video…</p><script>
-(async()=>{const f=location.hash.slice(1);const s=document.getElementById('s');
-try{const r=await fetch('v/'+f);if(!r.ok)throw new Error(r.status);const b=await r.blob();
-(window.opener||window.parent).postMessage({dpFile:f,blob:b},'https://www.tiktok.com');s.textContent='Enviado ('+b.size+' bytes). Puedes cerrar esta ventana.';setTimeout(()=>window.close(),1500);}
-catch(e){s.textContent='Error: '+e.message;}})();
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Dead Pixel - enviando videos</title>
+<style>body{font:16px -apple-system,system-ui,sans-serif;background:#000;color:#f5f5f7;padding:24px}b{color:#f5c400}</style></head>
+<body><p id="s">Preparando videos…</p><script>
+(async()=>{const files=location.hash.slice(1).split(',').filter(Boolean);const s=document.getElementById('s');
+const target=window.opener||(window.parent!==window?window.parent:null);
+if(!target){s.textContent='Abre esta página desde TikTok Studio.';return;}
+let n=0;for(const f of files){try{s.innerHTML='Enviando <b>'+f+'</b> ('+(n+1)+'/'+files.length+')…';
+const r=await fetch('v/'+f,{cache:'no-store'});if(!r.ok)throw new Error(r.status);const b=await r.blob();
+target.postMessage({dpFile:f,blob:b},'https://www.tiktok.com');n++;}catch(e){s.textContent='Error con '+f+': '+e.message;return;}}
+s.innerHTML='Listo: '+n+' videos enviados a TikTok. Esta ventana se cierra sola.';setTimeout(()=>window.close(),2500);})();
 </script></body></html>
