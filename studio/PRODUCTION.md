@@ -10,6 +10,7 @@ Setup in a fresh session: attach repo felipin612/deadpixel-upload (push), clone 
 Logo loses one more pixel each episode (drawLogo missing = episode number + 2).
 
 ## Steps
+0. Publish everything listed in ../PENDING.md first and tick it off.
 1. Read the dashboard (artifact slug 6fffd8bd-049e-490c-aa6b-da7200a14d8c) notes from Rastreador/Analista. Analista (26/11): TikToks lose 67-81% in the first 3 s, so the first line must be the hook, shown on screen from frame 1.
 2. Script: `epNN/script.md`, 14 scenes `## eNN`, 1,450-1,600 words, first person, English. Hook in the first sentence, one new lore clue, CTA at the end.
 3. Voice: local Kokoro `bm_george`, speed 0.9 (episodes) / 0.95 (shorts) — see ep02 build in git history. ElevenLabs only for short extras (free tier: keep credits; voice Callum N2lVS1w4EtoT3dr4eOWO).
