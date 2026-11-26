@@ -9,6 +9,17 @@ Setup in a fresh session: attach repo felipin612/deadpixel-upload (push), clone 
 | EP02 | NIGHTWALK | walking sim, never look back, "steps behind you" | Tester's name: T. Rowe, missing since 03/03/2004 |
 Logo loses one more pixel each episode (drawLogo missing = episode number + 2).
 
+
+## TikTok distribution rules (Analista/Rastreador, 26/11 — research doc r001)
+All 7 TikToks posted 25-26/11 sit at 0 views while the 2 earlier posts got 115-135. Until this is solved:
+- Never delete and re-upload the same video (duplicate detection). If a caption is wrong, leave it.
+- Read the Content Check Lite result in the TikTok Studio upload form before posting. If it warns "Content may be restricted", do not post: note the warning in the dashboard research doc r001 and change the video (e.g. different opening/caption) before trying.
+- Max 3 TikToks a day, at least 3 hours apart. Do not judge a post before 24 h.
+- Keep "Creator labeled as AI-generated" ON (the narration is synthetic audio).
+- Experiment running: one of the 3 daily TikToks without any YouTube mention in the caption (CTA only spoken at the end). Log which one in r001.
+## Hook rules (research doc r002)
+TikToks with data lost 64-81% of viewers by second 3. First frame = the most striking image of the story with the hook as on-screen text; spoken hook ≤ 10 words starting at 0.0 s (trim leading silence); no logo, no title card, no slow camera move in the first 2 s.
+
 ## Steps
 0. Publish everything listed in ../PENDING.md first and tick it off.
 1. Read the dashboard (artifact slug 6fffd8bd-049e-490c-aa6b-da7200a14d8c) notes from Rastreador/Analista. Analista (26/11): TikToks lose 67-81% in the first 3 s, so the first line must be the hook, shown on screen from frame 1.
