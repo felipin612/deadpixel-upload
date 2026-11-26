@@ -1,0 +1,9 @@
+Never use the rear camera in this PS2 game.
+
+NIGHTWALK only lets you look forward. But the debug menu has one option nobody was supposed to touch. Rear camera.
+
+I pressed it. For the first time I saw my character. A grey figure with a lantern. And ten steps behind him, another one. Same hood. No lantern.
+
+I switched back and walked. Switched again. Five steps. Then two.
+
+He wasn't walking when I walked. He was walking when I looked.

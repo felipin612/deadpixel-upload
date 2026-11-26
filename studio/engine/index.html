@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.min.js"}}</script>
+</head><body>
+<script type="module">
+import * as THREE from 'three';
+import { SCENES } from './scenes.js';
+import { SCENES2 } from './scenes2.js';
+Object.assign(SCENES, SCENES2);
+import { initPost, renderPost } from './post.js';
+
+const params = new URLSearchParams(location.search);
+const W = +(params.get('w') || 480), H = +(params.get('h') || 270);
+const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(W, H);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+const post = initPost(renderer, W, H);
+
+let current = null, currentId = null;
+window.DP = {
+  ready: true,
+  // t = seconds since scene start, dur = scene duration
+  frame(id, t, dur) {
+    if (id !== currentId) {
+      if (current && current.dispose) current.dispose();
+      current = SCENES[id]({ THREE, W, H, renderer });
+      currentId = id;
+    }
+    current.update(t, dur);
+    renderPost(renderer, post, current.scene, current.camera, current.hud, t);
+    return true;
+  },
+  list() { return Object.keys(SCENES); }
+};
+</script>
+</body></html>
