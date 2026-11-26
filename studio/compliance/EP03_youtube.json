@@ -1,0 +1,17 @@
+{
+ "id": "EP03",
+ "kind": "episode",
+ "platform": "youtube",
+ "video": "EP03.mp4",
+ "checked_at": "2026-11-26T15:05:40-03:00",
+ "publish_at": "2026-11-26T15:05-03:00",
+ "pass": true,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  }
+ ]
+}
