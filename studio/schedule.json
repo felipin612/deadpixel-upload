@@ -1,10 +1,33 @@
 {
-  "_doc": "Posting slots (America/Argentina/Buenos_Aires). The publisher schedules each post in Buffer with mode customScheduled at the next free slot of its platform. TikTok slots are 4 h apart (rule R2 needs >= 3 h). Change times here only; Analista may propose new slots from audience data.",
-  "timezone": "America/Argentina/Buenos_Aires",
-  "buffer_organization": "6b08697bca9ef287f9887aab",
-  "channels": {
-    "instagram": {"buffer_channel": "6b086a498541f09ecbb2c954", "slots": ["12:30", "16:30", "20:30"], "episode_part1": "21:30"},
-    "tiktok": {"buffer_channel": null, "slots": ["12:00", "16:00", "20:00"]},
-    "youtube": {"buffer_channel": null, "shorts": ["13:00", "17:00", "21:00"], "episode": "19:00"}
+ "_doc": "Posting slots (America/Argentina/Buenos_Aires). The publisher schedules each post in Buffer with mode customScheduled at the next free slot of its platform. TikTok slots are 4 h apart (rule R2 needs >= 3 h). Change times here only; Analista may propose new slots from audience data. The same slots are set as Buffer posting schedules (queue), so addToQueue also lands on them.",
+ "timezone": "America/Argentina/Buenos_Aires",
+ "buffer_organization": "6b08697bca9ef287f9887aab",
+ "channels": {
+  "instagram": {
+   "buffer_channel": "6b086a498541f09ecbb2c954",
+   "slots": [
+    "12:30",
+    "16:30",
+    "20:30"
+   ],
+   "episode_part1": "21:30"
+  },
+  "tiktok": {
+   "buffer_channel": "6b0872e28541f09ecbb31b3d",
+   "slots": [
+    "12:00",
+    "16:00",
+    "20:00"
+   ]
+  },
+  "youtube": {
+   "buffer_channel": "6b08732a8541f09ecbb31d59",
+   "shorts": [
+    "13:00",
+    "17:00",
+    "21:00"
+   ],
+   "episode": "19:00"
   }
+ }
 }
