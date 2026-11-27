@@ -7,35 +7,63 @@
    "buffer_channel": "6b086a498541f09ecbb2c954",
    "slots": [
     "12:30",
-    "16:30",
-    "20:30"
+    "22:00",
+    "23:30"
    ],
    "episode_part1": "21:30"
   },
   "tiktok": {
    "buffer_channel": "6b0872e28541f09ecbb31b3d",
    "slots": [
-    "12:00",
     "16:00",
-    "20:00"
+    "20:00",
+    "23:00"
    ]
   },
   "youtube": {
    "buffer_channel": "6b08732a8541f09ecbb31d59",
    "shorts": [
-    "13:00",
-    "17:00",
-    "21:00"
+    "18:00",
+    "20:00",
+    "22:30"
    ],
-   "episode": "19:00"
+   "episode": "16:00"
   }
  },
  "decision": {
-  "set_by": "inicial (antes del primer análisis)",
-  "date": "2026-11-26",
-  "reason": "Horarios provisionales: tarde/noche de Buenos Aires = tarde en EE.UU. (la narración es en inglés). Sin datos propios todavía.",
-  "evidence": [],
-  "sources": [],
-  "experiment": null
+  "set_by": "Rastreador",
+  "date": "2026-11-27",
+  "reason": "Narración en inglés: se toma EE.UU. como audiencia principal (HIPÓTESIS: TikTok y YouTube no devuelven país de la audiencia todavía). Hora del Este (UTC-5) = Buenos Aires - 2 h. TikTok: se quita 12:00 (10:00 ET, fuera de las ventanas de los estudios) y se prueba 23:00 (21:00 ET, pico nocturno de Buffer); 16:00 y 20:00 siguen (14:00-18:00 ET, ventana de Sprout). YouTube Shorts: Buffer marca 16-19 h local y pico 18-23 h -> 18:00, 20:00, 22:30 BA (16:00, 18:00, 20:30 ET). Episodio: Buffer da mediodía local para videos largos; lo más cercano permitido (>= 15:00) con margen de producción es 16:00 BA (14:00 ET, 11:00 PT). Instagram: Dash Social da 00:00 local para Reels (02:00 BA, fuera de rango) y peor franja 16-19 h local (18-21 BA) -> 22:00 y 23:30 BA (20:00 y 21:30 ET); 12:30 se mantiene; Parte 1 a las 21:30. Los datos propios no alcanzan: ninguna hora tiene 3 publicaciones con distribución normal.",
+  "evidence": [
+   "TikTok (Windsor, vistas totales): 17:28 BA 'night shift' 171 vistas; 18:37 BA 'town knew my name' 154 vistas (1 publicación cada hora -> HIPÓTESIS). 23:35-23:47 BA: 4 publicaciones, 0 vistas, 100% del tráfico desde el perfil propio. 09:58-10:01 BA: 2 publicaciones, 0 vistas. 13:35 BA: 1 publicación, 0 vistas. El problema de 0 vistas (r001) afecta a todas las horas, así que la hora no se puede aislar.",
+   "YouTube (Buffer, métricas al 26/11 18:11 UTC): publicaciones 23:18-23:22 BA del 25/11: EP01 26 vistas, Shorts 66, 72 y 38. 09:56-10:30 BA del 26/11: 0, 0 y 1 vistas. 13:38-15:09 BA: 0 vistas, pero con solo 0-4 h de vida al medir. Menos de 3 publicaciones por hora -> HIPÓTESIS.",
+   "Instagram: 0 publicaciones (Sin información propia).",
+   "País de la audiencia: Windsor devuelve vacío para TikTok y YouTube (Sin información)."
+  ],
+  "sources": [
+   {
+    "title": "Buffer – Best time to post on TikTok (7,1 M publicaciones)",
+    "url": "https://buffer.com/resources//best-time-to-post-on-tiktok/"
+   },
+   {
+    "title": "Sprout Social – Best times to post on TikTok",
+    "url": "https://sproutsocial.com/insights/best-times-to-post-on-tiktok/"
+   },
+   {
+    "title": "Buffer – Best time to post on YouTube (1,8 M videos, Shorts y largos)",
+    "url": "https://buffer.com/resources/best-time-to-post-on-youtube/"
+   },
+   {
+    "title": "Dash Social – Best time to post on Instagram (323.000 Reels)",
+    "url": "https://www.dashsocial.com/blog/best-time-to-post-on-instagram"
+   }
+  ],
+  "experiment": {
+   "platform": "tiktok",
+   "slot": "23:00",
+   "from": "2026-11-28",
+   "until": "2026-11-30",
+   "measure": "vistas a 24 h y retención a 3 s del TikTok de 23:00 contra los de 16:00 y 20:00 del mismo día (Windsor tiktok_organic). Única variable: la hora."
+  }
  }
 }

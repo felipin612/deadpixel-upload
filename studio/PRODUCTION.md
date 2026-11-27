@@ -32,6 +32,12 @@ All 7 TikToks posted 25-26/11 sit at 0 views while the 2 earlier posts got 115-1
 TikToks with data lost 64-81% of viewers by second 3. First frame = the most striking image of the story with the hook as on-screen text; spoken hook ≤ 10 words starting at 0.0 s (trim leading silence); no logo, no title card, no slow camera move in the first 2 s.
 
 
+## Length, comments and Instagram rules (Analista/Rastreador 27/11 — research docs r003, r004, r006)
+- R13 (r003): every short lasts 30-60 s on every platform. The 113-116 s TikToks were watched to the end only 0.4% of the time.
+- R14 (r004): on YouTube, as soon as the short or episode is live, pin our own comment with ONE concrete question about the new clue (YouTube Help recommends pinned comments to ask a question).
+- R15 (r004): TikTok and Instagram captions ask the viewer one concrete question about the story (must contain "?"), e.g. "Would you cut the line?".
+- R16-R17 (r006): Instagram Reels have never been published. From today every short also goes to Instagram Reels and the episode Part 1 too, through Buffer (studio/PUBLISHING_CLOUD.md) with automatic publishing (not notification): 3 s-15 min, <= 300 MB, aspect 4:5-9:16. Check get_post shows status sent. S07-S09 are not on Instagram yet: publish them first (new files are allowed on a new platform; R1 is per platform).
+
 ## Posting times: the Rastreador decides, the Publicador obeys
 Every morning the Rastreador rewrites `studio/schedule.json` (slots per platform: TikTok, Instagram Reels, YouTube Shorts, YouTube episode, Instagram Part 1) and explains the choice in `decision`.
 How to choose (in this order; real numbers only, never invented):
@@ -57,5 +63,5 @@ Progress is saved in `state/<YYYY-MM-DD>.json` ({"stage": ..., "done": [...], "p
 5. Render with two `worker.py` processes (ports 8771/8772) sharing a job list: shorts first, the episode in parallel.
 6. Finish: `finish.py` (episode) and `finish_short.sh SNN "TITLE"` (shorts). Captions: Anton 68 px at 1080 wide, 3-word chunks, y = 68% of height, white with black outline, yellow for on-screen/dialogue lines; `CAP_BOX=1` adds a dark band when the background is busy or white text.
 7. Covers: `covers.py` — 16:9 (2-3 Anton lines, white + yellow, never repeat title words) and 9:16 for each short.
-8. Gate: `gate.py check` for each video and platform (TikToks: schedule them >= 3 h apart with `--at` and TikTok Studio's schedule option). Only on GATE PASS: publish without asking (the user authorized publishing anything on-topic for the channel), following studio/PUBLISHING_CLOUD.md (Buffer, no device; the old browser flow in PUBLISHING.md is only a fallback): YouTube episode (cover, chapters, tags, AI disclosure, playlist The Lost Library), 3 Shorts, 3 TikToks. Verify every post in the content lists. Update Shorts descriptions with the episode link once it is live.
+8. Gate: `gate.py check` for each video and platform (TikToks: schedule them >= 3 h apart with `--at` and TikTok Studio's schedule option). Only on GATE PASS: publish without asking (the user authorized publishing anything on-topic for the channel), following studio/PUBLISHING_CLOUD.md (Buffer, no device; the old browser flow in PUBLISHING.md is only a fallback): YouTube episode (cover, chapters, tags, AI disclosure, playlist The Lost Library, pinned question R14), 3 Shorts, 3 TikToks, 3 Instagram Reels + Instagram Part 1 (R16-R17). Verify every post in the content lists. Update Shorts descriptions with the episode link once it is live.
 9. Update the dashboard workers and events; remove the batch from `v/`.

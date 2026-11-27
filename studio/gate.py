@@ -57,6 +57,16 @@ def leading_silence(video):
     return 0.0
 
 
+def probe(video):
+    out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                          "stream=width,height:format=duration,size", "-of", "json", video],
+                         capture_output=True, text=True).stdout
+    j = json.loads(out or "{}")
+    st = (j.get("streams") or [{}])[0]
+    fm = j.get("format", {})
+    return float(fm.get("duration", 0)), int(fm.get("size", 0)), st.get("width", 0), st.get("height", 0)
+
+
 def first_sentence(script):
     text = open(script).read().strip()
     return re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0]
@@ -108,6 +118,18 @@ def check(a):
             hm = at.astimezone(TZ).strftime("%H:%M")
             ok = bool(a.at) and hm in [x for x in slots if x]
             why = "%s vs Rastreador slots %s" % (hm if a.at else "no --at given", slots)
+        elif rid == "R13-short-length":
+            d = probe(a.video)[0]
+            ok, why = 30 <= d <= 60, "duration %.1f s (allowed 30-60 s)" % d
+        elif rid == "R15-caption-question":
+            cap = open(a.caption).read() if a.caption else ""
+            ok = "?" in cap
+            why = "caption asks a question" if ok else ("no --caption file given" if not a.caption else "caption has no question: add one about the story clue")
+        elif rid == "R16-ig-reel-format":
+            d, size, w, h = probe(a.video)
+            ratio = (w / h) if h else 0
+            ok = 3 <= d <= 900 and size <= 300 * 1024 * 1024 and 0.5625 - 0.01 <= ratio <= 0.8 + 0.01 and w <= 1920
+            why = "%.1f s, %.1f MB, %dx%d (Buffer auto-publish: 3 s-15 min, <=300 MB, 4:5 to 9:16, <=1920 px wide)" % (d, size / 1048576, w, h)
         elif rid == "R6-hook-at-zero":
             s = leading_silence(a.video)
             ok, why = s <= 0.15, "leading silence %.2f s" % s

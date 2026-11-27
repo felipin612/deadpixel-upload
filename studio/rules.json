@@ -131,6 +131,57 @@
    ],
    "check": "auto",
    "text": "Publish/schedule time (--at) must be one of the slots the Rastreador set in studio/schedule.json for that platform and format."
+  },
+  {
+   "id": "R13-short-length",
+   "research": "r003",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "auto",
+   "text": "Shorts last 30-60 s (never the 100+ s cuts that got 0.4% completion on TikTok)."
+  },
+  {
+   "id": "R14-pinned-question",
+   "research": "r004",
+   "platforms": [
+    "youtube"
+   ],
+   "check": "confirm",
+   "text": "Right after the YouTube video (short or episode) is live, pin our own comment with one concrete question about the new lore clue (e.g. 'What do you think is on T. Rowe's memory card?')."
+  },
+  {
+   "id": "R15-caption-question",
+   "research": "r004",
+   "platforms": [
+    "tiktok",
+    "instagram"
+   ],
+   "check": "auto",
+   "text": "The caption asks the viewer one concrete question about the story (contains '?'), e.g. 'Would you cut the line?'."
+  },
+  {
+   "id": "R16-ig-reel-format",
+   "research": "r006",
+   "platforms": [
+    "instagram"
+   ],
+   "check": "auto",
+   "text": "Reel meets Buffer auto-publish limits: 3 s-15 min, <=300 MB, aspect between 4:5 and 9:16, <=1920 px wide."
+  },
+  {
+   "id": "R17-ig-auto-publish",
+   "research": "r006",
+   "platforms": [
+    "instagram"
+   ],
+   "check": "confirm",
+   "text": "Buffer post is type reel with automatic publishing (not notification publishing); afterwards get_post shows status sent with the Instagram link. Every short also goes to Instagram Reels, plus the episode Part 1."
   }
  ]
 }
