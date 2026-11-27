@@ -8,5 +8,13 @@
    "exaggeration": 0.5,
    "cfg_weight": 0.5
   }
+ ],
+ "done": true,
+ "result": [
+  {
+   "name": "S12",
+   "seconds": 31.6,
+   "render_seconds": 125.2
+  }
  ]
 }
