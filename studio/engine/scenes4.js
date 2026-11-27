@@ -162,7 +162,7 @@ export const SCENES4 = {
   e403({ W, H }) {
     const a = screen(W, H, (g, w, h, t) => drawTitleSM(g, w, h, t));
     const C = cabin(W, H); const b = camShot(C.scene, C.camera, (t, d) => { C.drawBoard(t); C.camera.position.set(0, 1.7, 1.6 - t * 0.02); C.camera.lookAt(0, 1.3, -2); });
-    const c = screen(W, H, (g, w, h, t) => drawTyped(g, w, h, t, ['CLEAR ONLY THE TRAINS ON THE TIMETABLE.', 'ANYTHING ELSE, HOLD AT RED.'], 14));
+    const c = screen(W, H, (g, w, h, t) => drawTyped(g, w, h, t, w > h ? ['CLEAR ONLY THE TRAINS ON THE TIMETABLE.', 'ANYTHING ELSE, HOLD AT RED.'] : ['CLEAR ONLY THE TRAINS', 'ON THE TIMETABLE.', 'ANYTHING ELSE,', 'HOLD AT RED.'], 14));
     return composite([{ frac: 0.4, obj: a }, { frac: 0.25, obj: b }, { frac: 0.35, obj: c }]);
   },
   // 4. First night: levers, freight rolls past with green signal, timetable, memory card
@@ -204,7 +204,7 @@ export const SCENES4 = {
   // 9. Forum reply; then the frozen lake memory (boathouse) — R. Kell
   e409({ W, H }) {
     const a = screen(W, H, (g, w, h, t, d) => drawForumSM(g, w, h, t, clamp01(t / (d * 0.45))));
-    const b = screen(W, H, (g, w, h, t) => drawTyped(g, w, h, t, ['R. KELL — MERROW LAKE — 1961', 'J. KELL — DEAD PIXEL STUDIOS — 2001'], 12));
+    const b = screen(W, H, (g, w, h, t) => drawTyped(g, w, h, t, w > h ? ['R. KELL — MERROW LAKE — 1961', 'J. KELL — DEAD PIXEL STUDIOS — 2001'] : ['R. KELL', 'MERROW LAKE, 1961', 'J. KELL', 'DEAD PIXEL STUDIOS, 2001'], 12));
     return composite([{ frac: 0.62, obj: a }, { frac: 0.38, obj: b }]);
   },
   // 10. Debug menu -> LINE VIEW; route draws across the lake to my street
@@ -249,13 +249,19 @@ export const SCENES4 = {
   e400({ W, H }) { return screen(W, H, (g, w, h, t) => drawLogo(g, w, h, t, 6)); },
   // ---- shorts (vertical): open on the strongest image, no logo, no slow move ----
   sh10({ W, H }) { const S = street(W, H, { train: true });
-    const a = camShot(S.scene, S.camera, (t) => { S.flick(t, 0.6); S.camera.position.set(-6, 5.2, 15); S.camera.lookAt(0.5, 1.4, 4); }, S.hud);
+    const a = camShot(S.scene, S.camera, (t) => { S.flick(t, 0.6); S.camera.position.set(-6, 5.2, 15); S.camera.lookAt(0.2, 0.0, 4.5); }, S.hud);
     const b = SCENES4.e403({ W, H }), c = SCENES4.e405({ W, H }), e = screen(W, H, (g, w, h, t) => drawCTA(g, w, h, t));
     return composite([{ frac: 0.32, obj: a }, { frac: 0.26, obj: later(b, 0.6) }, { frac: 0.3, obj: c }, { frac: 0.12, obj: e }]); },
   sh11({ W, H }) { const C = cabin(W, H); C.lamp.intensity = 3;
     const a = camShot(C.scene, C.camera, (t) => { C.drawBoard(t, 1); C.camera.position.set(0.5, 1.95, 0.2); C.camera.lookAt(1.3, 2.4, -2.2); });
     const b = screen(W, H, (g, w, h, t) => drawBellCodes(g, w, h, t, 5)), c = SCENES4.e406({ W, H }), e = screen(W, H, (g, w, h, t) => drawCTA(g, w, h, t));
     return composite([{ frac: 0.3, obj: a }, { frac: 0.22, obj: b }, { frac: 0.36, obj: later(c, 0.3) }, { frac: 0.12, obj: e }]); },
-  sh12({ W, H }) { const a = screen(W, H, (g, w, h, t) => drawMagazineSM(g, w, h, t, 1)), b = SCENES4.e409({ W, H }), e = screen(W, H, (g, w, h, t) => drawCTA(g, w, h, t));
+  sh12({ W, H }) { const a = screen(W, H, (g, w, h, t) => { g.fillStyle = '#0a0a0c'; g.fillRect(0, 0, w, h);
+      g.save(); g.translate(w / 2, h * 0.5); g.rotate(-0.06); g.fillStyle = '#f2ede2'; g.fillRect(-w * 0.42, -h * 0.2, w * 0.84, h * 0.4);
+      g.fillStyle = '#c0281e'; g.fillRect(-w * 0.42, -h * 0.2, w * 0.84, h * 0.04); g.fillStyle = '#fff'; g.font = `bold ${Math.round(w * 0.04)}px Verdana, sans-serif`; g.fillText('PREVIEWS · SUMMER 2002', -w * 0.39, -h * 0.17);
+      g.fillStyle = '#111'; g.font = `bold ${Math.round(w * 0.08)}px Georgia, serif`; g.fillText('SIGNALMAN', -w * 0.39, -h * 0.09);
+      g.font = `italic ${Math.round(w * 0.045)}px Georgia, serif`; g.fillText('"I grew up next to a branch', -w * 0.39, -h * 0.02); g.fillText('line that closed..."', -w * 0.39, h * 0.02);
+      g.fillStyle = `rgba(255,214,0,${0.55 + 0.3 * Math.sin(t * 5)})`; g.fillRect(-w * 0.4, h * 0.06, w * 0.62, h * 0.065);
+      g.fillStyle = '#8a1a14'; g.font = `bold ${Math.round(w * 0.085)}px Georgia, serif`; g.fillText('— founder J. KELL', -w * 0.38, h * 0.11); g.restore(); }), b = SCENES4.e409({ W, H }), e = screen(W, H, (g, w, h, t) => drawCTA(g, w, h, t));
     return composite([{ frac: 0.3, obj: a }, { frac: 0.58, obj: b }, { frac: 0.12, obj: e }]); },
 };
