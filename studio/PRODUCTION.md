@@ -61,6 +61,7 @@ How to choose (in this order; real numbers only, never invented):
 4. One experiment at a time: at most one slot per platform may be a test slot (`decision.experiment`), kept for 3 days before judging it.
 Constraints: TikTok max 3 a day and >= 3 h apart (R2); slots between 09:30 and 23:30; the episode slot after the day's production usually finishes (>= 15:00).
 Also write/update the research doc `research/horarios` (problem, evidence, decision, sources, status applied) so the dashboard shows it, and add an event "Horarios nuevos: ...". If the data does not justify a change, keep the slots and say so.
+If schedule.json has `user_override_until` (times Felipe set by email) and that date has not passed, the Rastreador keeps his times and only writes its recommendation in research/horarios.
 The Publicador re-reads schedule.json right before scheduling each post and uses the next free slot of that platform; gate rule R12 refuses any other time.
 
 ## Daily timeline (all in the cloud, no device)
