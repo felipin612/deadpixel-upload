@@ -97,7 +97,7 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T14:34-03:00",
+ "updated": "2026-11-27T15:34-03:00",
  "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
  "notes": [
   "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04.",
@@ -129,5 +129,6 @@
   "ready_files": "v/EP04.mp4, v/S10.mp4, v/S11.mp4, v/S12.mp4; metadata studio/ep04/EP04_upload.json, studio/shorts4/S1x_youtube.json, studio/posts/*",
   "resolved_by": "Felipe por mail 27/11 11:20 (o001) y 11:32 (o002): publicar igual"
  },
- "mailbox_updated": "2026-11-27T12:25-03:00"
+ "mailbox_updated": "2026-11-27T12:25-03:00",
+ "run_in_progress": "15:31 run: metrics + EP04 YouTube verify"
 }
