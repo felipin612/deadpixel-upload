@@ -40,6 +40,8 @@ for path in sorted(glob.glob("jobs/tts/*.json")):
         ta.save(base + ".wav", audio, model.sr)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", base + ".wav", "-b:a", "160k", base + ".mp3"], check=True)
         secs = audio.shape[1] / model.sr
+        json.dump({"engine": "chatterbox", "ref": it.get("ref"), "params": {k: v for k, v in kw.items() if k != "audio_prompt_path"},
+                   "seconds": round(secs, 2), "text": it["text"]}, open(base + ".json", "w"), indent=1)  # marker read by gate.py R19
         report.append({"name": it["name"], "seconds": round(secs, 1), "render_seconds": round(time.time() - t0, 1)})
         print(report[-1], flush=True)
     job["done"], job["result"] = True, report

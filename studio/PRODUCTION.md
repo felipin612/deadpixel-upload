@@ -12,6 +12,15 @@ Logo loses one more pixel each episode (drawLogo missing = episode number + 2).
 
 
 
+
+## Voice: Chatterbox default voice (chosen by the user on 27/11) — never Kokoro, never ElevenLabs credits
+Settings in studio/voice.json. Narration is made for free by the GitHub Actions workflow `.github/workflows/tts.yml` (CPU, about 4.4 s of work per second of audio):
+1. As soon as the scripts are final, write `jobs/tts/<YYYY-MM-DD>_<ID>.json` = {"out_dir": "narration/<ID>", "items": [{"name": "<ID>_s01", "text": "...", "ref": null, "exaggeration": 0.5, "cfg_weight": 0.5}, ...]} — one item per scene for the episode (EPxx_s01..s14), one item per short (Sxx). Shorts first (one job for the 3 shorts, then one for the episode). Commit and push: the push starts the workflow.
+2. Wait: `git pull` every 60 s until the job file says "done": true and narration/<ID>/*.wav exist (shorts ~8 min, episode ~45 min). Meanwhile build scenes/covers. If this run must end, save stage "voz_pending" in the state file; the next hourly run resumes.
+3. Use narration/<ID>/<name>.wav as the voice tracks (timing per scene comes from each file's length). Trim leading silence to <= 0.15 s (R6).
+4. gate.py rule R19 refuses any video whose narration/<ID>/ has no Chatterbox markers. Part 1 clips use the episode's folder.
+5. If the workflow fails twice: Kokoro bm_george as fallback for that day only, alert event + alert email, and R19 is the one rule allowed to fail that day (write it in compliance).
+
 ## Fix loop: Analista findings are mandatory (never skip)
 Every problem the Analista finds goes to the Rastreador (dashboard collection `research`). Its fixes are NOT suggestions:
 - Before writing anything, list every research doc with status `solved`, `applied`, `not_applied` or `failed`. For each action in `findings.actions`, there must be a rule in `studio/rules.json`. If one is missing, add it (automatic check in `gate.py` when possible, else `"check": "confirm"`), commit, and write the rule ids into the doc field `rules`. Then set status `applied`.
@@ -57,7 +66,7 @@ Progress is saved in `state/<YYYY-MM-DD>.json` ({"stage": ..., "done": [...], "p
 0. Publish everything listed in ../PENDING.md first and tick it off.
 1. Run the Fix loop above (dashboard artifact slug 6fffd8bd-049e-490c-aa6b-da7200a14d8c, collection `research`). Nothing else starts until every fix is a rule in rules.json.
 2. Script: `epNN/script.md`, 14 scenes `## eNN`, 1,450-1,600 words, first person, English. Hook in the first sentence, one new lore clue, CTA at the end.
-3. Voice: local Kokoro `bm_george`, speed 0.9 (episodes) / 0.95 (shorts) — see ep02 build in git history. ElevenLabs only for short extras (free tier: keep credits; voice Callum N2lVS1w4EtoT3dr4eOWO).
+3. Voice: Chatterbox default voice through the TTS workflow (section "Voice" above). Never Kokoro (except the documented fallback) and never ElevenLabs credits.
    Build plan.json + shots.txt so the episode lands at 10:15 (intro logo 6 s + scenes + holds).
 4. Scenes: new `engine/scenesNN.js` + `screensNN.js`, register in `engine/index.html`. Check with `stills.py` before rendering.
 5. Render with two `worker.py` processes (ports 8771/8772) sharing a job list: shorts first, the episode in parallel.

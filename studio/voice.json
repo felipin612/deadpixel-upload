@@ -1,0 +1,10 @@
+{
+ "engine": "chatterbox",
+ "model": "ChatterboxTTS (Resemble AI, MIT)",
+ "ref": null,
+ "exaggeration": 0.5,
+ "cfg_weight": 0.5,
+ "temperature": 0.8,
+ "chosen_by": "user, 27/11 \u2014 sample 2 (Chatterbox default voice)",
+ "fallback": "Kokoro bm_george only if the TTS workflow fails twice (alert + email)"
+}

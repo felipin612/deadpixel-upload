@@ -130,6 +130,16 @@ def check(a):
             ratio = (w / h) if h else 0
             ok = 3 <= d <= 900 and size <= 300 * 1024 * 1024 and 0.5625 - 0.01 <= ratio <= 0.8 + 0.01 and w <= 1920
             why = "%.1f s, %.1f MB, %dx%d (Buffer auto-publish: 3 s-15 min, <=300 MB, 4:5 to 9:16, <=1920 px wide)" % (d, size / 1048576, w, h)
+        elif rid == "R19-voice-chatterbox":
+            base = os.path.join(os.path.dirname(HERE), "narration")
+            cands = [a.id, a.id.split("_")[0], re.sub(r"(_?P(ART)?\d+)$", "", a.id, flags=re.I)]
+            found = [c for c in cands if os.path.isdir(os.path.join(base, c))]
+            marks = []
+            if found:
+                d = os.path.join(base, found[0])
+                marks = [load(os.path.join(d, f), {}) for f in os.listdir(d) if f.endswith(".json")]
+            ok = bool(marks) and all(m.get("engine") == "chatterbox" for m in marks)
+            why = ("narration/%s: %d chatterbox segments" % (found[0], len(marks))) if found else "no narration/<ID>/ folder from the TTS workflow"
         elif rid == "R6-hook-at-zero":
             s = leading_silence(a.video)
             ok, why = s <= 0.15, "leading silence %.2f s" % s

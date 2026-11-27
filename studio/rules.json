@@ -194,6 +194,22 @@
    ],
    "check": "confirm",
    "text": "Each YouTube Short has its 'Related video' set to the episode of the same story (YouTube Studio > Short > Related video). Links in Shorts descriptions are not clickable, so the description link alone sends nobody to the episode."
+  },
+  {
+   "id": "R19-voice-chatterbox",
+   "research": "voz",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+   ],
+   "kinds": [
+    "short",
+    "episode",
+    "part1"
+   ],
+   "check": "auto",
+   "text": "Narration made with the user's chosen voice (studio/voice.json: Chatterbox default voice) through the TTS workflow: narration/<ID>/ must hold .json markers with engine chatterbox."
   }
  ]
 }
