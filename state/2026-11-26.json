@@ -1,1 +1,9 @@
-{"stage": "complete", "note": "26/11 batch produced by the earlier Mac-bound run (EP03 + S07-S09); cloud production starts 27/11 09:31", "updated": "2026-11-26T15:10-03:00"}
+{
+ "stage": "complete",
+ "note": "26/11 batch produced by the earlier Mac-bound run (EP03 + S07-S09); cloud production starts 27/11 09:31",
+ "updated": "2026-11-26T15:10-03:00",
+ "email_sent": true,
+ "email_sent_at": "2026-11-26T23:40-03:00",
+ "email_message_id": "1a21ad9cf6a459a3",
+ "metrics_exported_at": "2026-11-26T23:35-03:00"
+}
