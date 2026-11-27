@@ -1,5 +1,10 @@
 {
  "video_id": "y6zUGM1cUaw",
  "thumbnail": "covers/EP04_16x9.jpg",
- "synthetic": true
+ "synthetic": true,
+ "done": true,
+ "result": {
+  "thumbnail": "ok",
+  "synthetic": "ok"
+ }
 }
