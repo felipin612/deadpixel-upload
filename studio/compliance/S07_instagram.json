@@ -3,9 +3,9 @@
  "kind": "short",
  "platform": "instagram",
  "video": "S07.mp4",
- "checked_at": "2026-11-27T09:33:29-03:00",
- "publish_at": "2026-11-27T12:30-03:00",
- "pass": true,
+ "checked_at": "2026-11-27T13:33:32-03:00",
+ "publish_at": "2026-11-29T12:30-03:00",
+ "pass": false,
  "results": [
   {
    "rule": "R12-scheduled-slot",
@@ -34,8 +34,14 @@
   {
    "rule": "R17-ig-auto-publish",
    "research": "r006",
-   "ok": true,
-   "detail": "confirmed by producer"
+   "ok": false,
+   "detail": "NOT confirmed: do it, then pass --confirm R17-ig-auto-publish"
+  },
+  {
+   "rule": "R19-voice-chatterbox",
+   "research": "voz",
+   "ok": false,
+   "detail": "no narration/<ID>/ folder from the TTS workflow"
   }
  ]
 }
