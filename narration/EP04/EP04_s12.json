@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 20.63,
+ "text": "I didn't sleep after that. I sat with the timetable that came with the disc, the paper one, and I looked again at the one departure that someone had circled in pencil.\n\nThree minutes past three. Merrow Road. Platform one.\n\nOn the back, in the same white marker as the spine, someone had written a single line. If you hold it, it waits for you. If you clear it, it goes home.\n\nI don't know who wrote that. I think I know who is on that train."
+}

@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 26.82,
+ "text": "That was the night I found the magazine.\n\nA preview in a gaming magazine from the summer of 2002, half a page near the back. Signalman. A relaxing railway simulation from a small new studio. There's one screenshot of the lever frame and a short quote from the founder about growing up next to a branch line that closed when they were a child.\n\nThe founder's name was printed under the quote. J. Kell.\n\nThe preview ends with a sentence I have read maybe fifty times now. Every train in Signalman is real. Every one of them ran, once."
+}

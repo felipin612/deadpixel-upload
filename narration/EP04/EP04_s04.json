@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 38.49,
+ "text": "So I worked the box. And it's a good game. Calm, slow, strangely satisfying. A bell rings when a train is offered to you from the next box down the line. You ring back to accept it. You pull the levers in the right order, the points click across, the signal arm drops to green, and a little low-poly freight train rolls past your window with its lamps swinging.\n\nThe first night I cleared the ten past ten freight, the twenty to midnight mail, and two empty coal trains. Every one of them was printed on the timetable pinned beside the levers. Every one of them came exactly on time.\n\nWhen you quit, the game doesn't ask if you want to save. It saves anyway. The memory card screen shows one file with a little lamp icon, and a play time that is always a few minutes longer than I actually played."
+}

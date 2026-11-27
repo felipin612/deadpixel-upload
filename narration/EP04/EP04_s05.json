@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 30.1,
+ "text": "The second night, at three minutes past three in the morning, a light came on in the diagram.\n\nNot on any track I had worked. On a short grey line at the very edge of the board, a branch that went off the painted map and stopped at the frame. I hadn't noticed it before. The light was red, which meant something was standing on that section, waiting.\n\nThen the bell rang. Three beats, a pause, three beats. I checked the bell codes taped to the wall. Three, pause, three isn't on the list.\n\nI checked the timetable. There is no train at three minutes past three.\n\nSo I did what the game told me. I left the signal at red."
+}

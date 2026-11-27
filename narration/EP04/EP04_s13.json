@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 23.54,
+ "text": "The fifth night, I pulled the lever.\n\nThe signal arm dropped to green. The points clicked across. The bell rang one last time, a single beat, which in the codes on the wall means train entering section. And the three oh three rolled past my window, slowly, every carriage dark now except the last.\n\nThe window was empty. The memory card was on the seat.\n\nThen the screen went black. When it came back, it was the memory card browser. One file. SIGNALMAN. Created oh three, oh three, two thousand four."
+}

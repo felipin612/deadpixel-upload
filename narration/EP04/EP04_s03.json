@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 25.39,
+ "text": "The title screen is a signal box at night. A small wooden hut on stilts beside a single railway line, one lamp in the window, rain coming down in thin grey streaks. No music. Just rain on the roof and, somewhere far off, a bell.\n\nYou press start and you are already inside, standing in front of a row of iron levers, with a big painted diagram of the line on the wall above them.\n\nA single line of text sits at the bottom of the screen.\n\nClear only the trains on the timetable. Anything else, hold at red."
+}

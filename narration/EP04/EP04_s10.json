@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 29.58,
+ "text": "I went into the debug menu. Same button combination as the other Dead Pixel games. Most of the options are broken. One of them still works. It's called LINE VIEW.\n\nIt shows the whole railway from above, every box, every station, every siding. And it shows the branch at the edge of the map, the one that wasn't painted on the diagram.\n\nIt doesn't end at the frame. It keeps going. Off the old branch line, across a frozen lake, past a white boathouse on the north shore, and on through a town I know very well. It ends at a station with a name I had to read three times.\n\nIt's the name of my street."
+}
