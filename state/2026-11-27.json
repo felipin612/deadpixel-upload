@@ -1,7 +1,26 @@
 {
- "stage": "fixloop",
- "done": [],
- "posts": {},
+ "stage": "script",
+ "done": [
+  "fixloop (todos los fixes r001-r007 ya son reglas R1-R18)",
+  "instagram_S07-S09"
+ ],
+ "posts": {
+  "S07_instagram": {
+   "buffer": "6b0978a31fd46e62e7433d00",
+   "at": "2026-11-27T12:30-03:00",
+   "gate": "PASS"
+  },
+  "S08_instagram": {
+   "buffer": "6b0978af658222306c116087",
+   "at": "2026-11-27T22:00-03:00",
+   "gate": "PASS"
+  },
+  "S09_instagram": {
+   "buffer": "6b0978b01fd46e62e7434129",
+   "at": "2026-11-27T23:30-03:00",
+   "gate": "PASS"
+  }
+ },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T09:33-03:00"
+ "updated": "2026-11-27T09:36-03:00"
 }
