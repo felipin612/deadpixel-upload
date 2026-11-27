@@ -8,5 +8,13 @@
    "exaggeration": 0.5,
    "cfg_weight": 0.5
   }
+ ],
+ "done": true,
+ "result": [
+  {
+   "name": "S10",
+   "seconds": 22.6,
+   "render_seconds": 168.0
+  }
  ]
 }

@@ -8,5 +8,13 @@
    "exaggeration": 0.5,
    "cfg_weight": 0.5
   }
+ ],
+ "done": true,
+ "result": [
+  {
+   "name": "S11",
+   "seconds": 23.0,
+   "render_seconds": 159.7
+  }
  ]
 }
