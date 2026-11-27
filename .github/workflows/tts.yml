@@ -19,7 +19,7 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-chatterbox-v1
       - run: |
-          sudo apt-get install -y ffmpeg >/dev/null
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           pip install --quiet torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install --quiet chatterbox-tts
       - run: python tools/tts_chatterbox.py

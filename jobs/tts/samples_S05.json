@@ -29,5 +29,6 @@
    "exaggeration": 0.45,
    "cfg_weight": 0.3
   }
- ]
+ ],
+ "try": 2
 }
