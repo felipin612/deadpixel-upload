@@ -27,7 +27,9 @@
     "tiktok"
    ],
    "check": "confirm",
-   "text": "Content Check Lite in TikTok Studio read before posting; if it warns 'Content may be restricted', do NOT post: change the video and run the gate again."
+   "text": "Content Check Lite in TikTok Studio read before posting; if it warns 'Content may be restricted', do NOT post: change the video and run the gate again.",
+   "enabled": false,
+   "disabled_by": "Felipe por mail 27/11 11:20: 'continúa con todo lo demás' — solo se puede hacer a mano en YouTube/TikTok Studio; no bloquea la publicación en la nube"
   },
   {
    "id": "R4-ai-label",
@@ -153,7 +155,9 @@
     "youtube"
    ],
    "check": "confirm",
-   "text": "Right after the YouTube video (short or episode) is live, pin our own comment with one concrete question about the new lore clue (e.g. 'What do you think is on T. Rowe's memory card?')."
+   "text": "Right after the YouTube video (short or episode) is live, pin our own comment with one concrete question about the new lore clue (e.g. 'What do you think is on T. Rowe's memory card?').",
+   "enabled": false,
+   "disabled_by": "Felipe por mail 27/11 11:20: 'no fijes ningún comentario'"
   },
   {
    "id": "R15-caption-question",
@@ -193,7 +197,9 @@
     "short"
    ],
    "check": "confirm",
-   "text": "Each YouTube Short has its 'Related video' set to the episode of the same story (YouTube Studio > Short > Related video). Links in Shorts descriptions are not clickable, so the description link alone sends nobody to the episode."
+   "text": "Each YouTube Short has its 'Related video' set to the episode of the same story (YouTube Studio > Short > Related video). Links in Shorts descriptions are not clickable, so the description link alone sends nobody to the episode.",
+   "enabled": false,
+   "disabled_by": "Felipe por mail 27/11 11:20: 'continúa con todo lo demás' — solo se puede hacer a mano en YouTube/TikTok Studio; no bloquea la publicación en la nube"
   },
   {
    "id": "R19-voice-chatterbox",

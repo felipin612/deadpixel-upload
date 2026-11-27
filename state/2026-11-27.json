@@ -1,5 +1,5 @@
 {
- "stage": "publish_blocked_gate",
+ "stage": "publish",
  "done": [
   "fixloop (todos los fixes r001-r007 ya son reglas R1-R18)",
   "instagram_S07-S09",
@@ -50,21 +50,13 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T11:42-03:00",
+ "updated": "2026-11-27T11:45-03:00",
  "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
  "notes": [
-  "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04."
+  "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04.",
+  "27/11 11:25: Felipe respondió por mail (11:20) 'no fijes ningún comentario. continúa con todo lo demás'. R14, R18 y R3 desactivadas en rules.json (enabled:false). Seguir publicando YouTube/TikTok en los horarios del Rastreador."
  ],
  "metrics_exported_at": "2026-11-27T10:06-03:00",
- "blocked": {
-  "reason": "GATE FAIL en YouTube y TikTok: reglas 'confirm' que la nube no puede cumplir (R14 comentario fijado y R18 video relacionado: solo YouTube Studio; R3 Content Check Lite: solo TikTok Studio). No se confirmó nada falso; no se publicó en YouTube/TikTok.",
-  "pending": [
-   "EP04 YouTube 16:00",
-   "S10/S11/S12 YouTube Shorts 14:00/18:00/21:00",
-   "S10/S11/S12 TikTok 28/11 15:00/18:00/21:00"
-  ],
-  "ready_files": "v/EP04.mp4, v/S10.mp4, v/S11.mp4, v/S12.mp4; metadata studio/ep04/EP04_upload.json, studio/shorts4/S1x_youtube.json, studio/posts/*"
- },
  "alerts_emailed": [
   {
    "alert": "gate_fail_youtube_tiktok_R3_R14_R18",
@@ -72,5 +64,14 @@
    "message_id": "1a21d5f566db38aa"
   }
  ],
- "next_run": "Si el usuario decide (respuesta al mail de alerta), programar EP04 YouTube y S10-S12 Shorts/TikTok en las franjas libres de schedule.json; si no, no publicar (gate FAIL). Verificar que los Reels de Instagram pasen a 'sent' y registrar enlaces. A las 23:31 enviar el mail 8b si sigue sin 'complete'."
+ "next_run": "Si el usuario decide (respuesta al mail de alerta), programar EP04 YouTube y S10-S12 Shorts/TikTok en las franjas libres de schedule.json; si no, no publicar (gate FAIL). Verificar que los Reels de Instagram pasen a 'sent' y registrar enlaces. A las 23:31 enviar el mail 8b si sigue sin 'complete'.",
+ "blocked_resolved": {
+  "reason": "GATE FAIL en YouTube y TikTok: reglas 'confirm' que la nube no puede cumplir (R14 comentario fijado y R18 video relacionado: solo YouTube Studio; R3 Content Check Lite: solo TikTok Studio). No se confirmó nada falso; no se publicó en YouTube/TikTok.",
+  "pending": [
+   "EP04 YouTube 16:00",
+   "S10/S11/S12 YouTube Shorts 14:00/18:00/21:00",
+   "S10/S11/S12 TikTok 28/11 15:00/18:00/21:00"
+  ],
+  "ready_files": "v/EP04.mp4, v/S10.mp4, v/S11.mp4, v/S12.mp4; metadata studio/ep04/EP04_upload.json, studio/shorts4/S1x_youtube.json, studio/posts/*"
+ }
 }

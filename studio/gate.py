@@ -81,6 +81,8 @@ def check(a):
     for r in rules:
         if a.platform not in r.get("platforms", []) or ("kinds" in r and a.kind not in r["kinds"]):
             continue
+        if r.get("enabled") is False:  # turned off by the user (see disabled_by)
+            continue
         rid, ok, why = r["id"], None, ""
         if r["check"] == "confirm":
             ok = rid in confirmed
