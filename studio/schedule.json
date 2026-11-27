@@ -15,17 +15,17 @@
   "tiktok": {
    "buffer_channel": "6b0872e28541f09ecbb31b3d",
    "slots": [
-    "16:00",
-    "20:00",
-    "23:00"
+    "15:00",
+    "18:00",
+    "21:00"
    ]
   },
   "youtube": {
    "buffer_channel": "6b08732a8541f09ecbb31d59",
    "shorts": [
+    "14:00",
     "18:00",
-    "20:00",
-    "22:30"
+    "21:00"
    ],
    "episode": "16:00"
   }
@@ -33,12 +33,13 @@
  "decision": {
   "set_by": "Rastreador",
   "date": "2026-11-27",
-  "reason": "Narración en inglés: se toma EE.UU. como audiencia principal (HIPÓTESIS: TikTok y YouTube no devuelven país de la audiencia todavía). Hora del Este (UTC-5) = Buenos Aires - 2 h. TikTok: se quita 12:00 (10:00 ET, fuera de las ventanas de los estudios) y se prueba 23:00 (21:00 ET, pico nocturno de Buffer); 16:00 y 20:00 siguen (14:00-18:00 ET, ventana de Sprout). YouTube Shorts: Buffer marca 16-19 h local y pico 18-23 h -> 18:00, 20:00, 22:30 BA (16:00, 18:00, 20:30 ET). Episodio: Buffer da mediodía local para videos largos; lo más cercano permitido (>= 15:00) con margen de producción es 16:00 BA (14:00 ET, 11:00 PT). Instagram: Dash Social da 00:00 local para Reels (02:00 BA, fuera de rango) y peor franja 16-19 h local (18-21 BA) -> 22:00 y 23:30 BA (20:00 y 21:30 ET); 12:30 se mantiene; Parte 1 a las 21:30. Los datos propios no alcanzan: ninguna hora tiene 3 publicaciones con distribución normal.",
+  "reason": "Narración en inglés: se toma EE.UU. como audiencia principal (HIPÓTESIS: Windsor no devuelve país de la audiencia). Hora del Este (UTC-5) = Buenos Aires - 2 h. YouTube Shorts: datos propios (vistas actuales, 3 publicaciones por franja): 09:56-10:30 BA 189/164/154; 14:50-14:52 BA 140/205/169 con solo 18 h de vida; 23:19-23:22 BA 138/98/44 con 34 h -> la franja nocturna es la más débil (HIPÓTESIS: la edad y el crecimiento del canal también cambian). Se eligen 14:00 (mejor franja propia), 18:00 y 21:00 (Buffer: viernes 16-19 h local = 18-21 BA). Episodio: Buffer da mediodía local para videos largos; lo más cercano permitido (>= 15:00) con margen de producción: 16:00 BA (14:00 ET). TikTok: 15:00, 18:00, 21:00 BA (13, 16 y 19 h ET: ventana 14-18 h de Sprout y pico nocturno de Buffer); 18:00 es donde están las dos únicas publicaciones que tuvieron vistas (17:28 y 18:37). 21:00 es la franja de prueba. Los 3 TikToks de hoy (12:00/16:00/20:00) ya están programados: no se tocan (R10). Instagram: sin datos propios (0 publicaciones). Dash Social: 00:00 local para Reels (02:00 BA, fuera de rango) y peor franja 16-19 h local (18-21 BA) -> 12:30, 22:00 y 23:30 BA; Parte 1 a las 21:30.",
   "evidence": [
-   "TikTok (Windsor, vistas totales): 17:28 BA 'night shift' 171 vistas; 18:37 BA 'town knew my name' 154 vistas (1 publicación cada hora -> HIPÓTESIS). 23:35-23:47 BA: 4 publicaciones, 0 vistas, 100% del tráfico desde el perfil propio. 09:58-10:01 BA: 2 publicaciones, 0 vistas. 13:35 BA: 1 publicación, 0 vistas. El problema de 0 vistas (r001) afecta a todas las horas, así que la hora no se puede aislar.",
-   "YouTube (Buffer, métricas al 26/11 18:11 UTC): publicaciones 23:18-23:22 BA del 25/11: EP01 26 vistas, Shorts 66, 72 y 38. 09:56-10:30 BA del 26/11: 0, 0 y 1 vistas. 13:38-15:09 BA: 0 vistas, pero con solo 0-4 h de vida al medir. Menos de 3 publicaciones por hora -> HIPÓTESIS.",
-   "Instagram: 0 publicaciones (Sin información propia).",
-   "País de la audiencia: Windsor devuelve vacío para TikTok y YouTube (Sin información)."
+   "YouTube Shorts (Windsor youtube_public, vistas totales al 27/11 09:10 BA): S01 138, S02 98, S03 44 (25/11 23:19-23:22); S04 189, S05 164, S06 154 (26/11 09:56-10:30); S07 140, S08 205, S09 169 (26/11 14:50-14:52). 3 publicaciones por franja; la edad de los videos no es la misma.",
+   "Episodios YouTube: EP01 42 (25/11 23:18), EP02 0 (26/11 13:38), EP03 10 (26/11 15:09), The Gas Station 21 (25/11 17:31).",
+   "TikTok (Windsor): 17:28 BA 171 vistas; 18:37 BA 154 vistas (1 publicación por hora -> HIPÓTESIS). 23:35-23:47 BA: 4 publicaciones, 0 vistas (100% tráfico del perfil propio). 09:58-10:01: 2 con 0. 13:35: 1 con 0. El problema de 0 vistas (r001) es de toda la cuenta: la hora no se puede aislar.",
+   "Instagram: 0 publicaciones (Sin información).",
+   "País de la audiencia: Sin información (Windsor devuelve vacío en TikTok y YouTube)."
   ],
   "sources": [
    {
@@ -60,10 +61,10 @@
   ],
   "experiment": {
    "platform": "tiktok",
-   "slot": "23:00",
+   "slot": "21:00",
    "from": "2026-11-28",
    "until": "2026-11-30",
-   "measure": "vistas a 24 h y retención a 3 s del TikTok de 23:00 contra los de 16:00 y 20:00 del mismo día (Windsor tiktok_organic). Única variable: la hora."
+   "measure": "vistas a 24 h y retención a 3 s del TikTok de 21:00 contra los de 15:00 y 18:00 del mismo día (Windsor tiktok_organic). Única variable: la hora."
   }
  }
 }
