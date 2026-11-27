@@ -30,5 +30,28 @@
    "cfg_weight": 0.3
   }
  ],
- "try": 4
+ "try": 4,
+ "done": true,
+ "result": [
+  {
+   "name": "B_chatterbox_default",
+   "seconds": 23.5,
+   "render_seconds": 102.0
+  },
+  {
+   "name": "C_george_tenso",
+   "seconds": 33.1,
+   "render_seconds": 151.9
+  },
+  {
+   "name": "D_onyx_grave",
+   "seconds": 24.2,
+   "render_seconds": 110.1
+  },
+  {
+   "name": "E_lewis_susurro",
+   "seconds": 29.4,
+   "render_seconds": 131.7
+  }
+ ]
 }
