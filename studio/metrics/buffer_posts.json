@@ -1,16 +1,30 @@
 [
  {
-  "post_id": "6b09a32dbb117e5ba75a9d18",
+  "post_id": "6b09a32f32c212878fe0e58b",
   "channel": "6b08732a8541f09ecbb31d59",
   "service": "youtube",
-  "text": "An unreleased PS2 signal box game. One rule: clear only the trains on the timeta",
-  "sentAt": "2026-11-27T17:00:47.517Z",
-  "dueAt": "2026-11-27T17:00:00.000Z",
+  "text": "A railway timetable was left in my mailbox. Folded inside: an unreleased PS2 sig",
+  "sentAt": "2026-11-27T19:01:29.704Z",
+  "dueAt": "2026-11-27T19:00:00.000Z",
   "metrics": {
    "reactions": 0,
    "comments": 0,
    "engagementRate": 0,
    "views": 0
+  }
+ },
+ {
+  "post_id": "6b09a32dbb117e5ba75a9d18",
+  "channel": "6b08732a8541f09ecbb31d59",
+  "service": "youtube",
+  "text": "Full episode: https://youtu.be/y6zUGM1cUaw\n\nAn unreleased PS2 signal box game. O",
+  "sentAt": "2026-11-27T17:00:47.517Z",
+  "dueAt": "2026-11-27T17:00:00.000Z",
+  "metrics": {
+   "reactions": 5,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 240
   }
  },
  {
