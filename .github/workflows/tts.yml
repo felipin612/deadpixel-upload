@@ -34,6 +34,6 @@ jobs:
       - if: always()
         run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add -A jobs/tts samples narration 2>/dev/null || true
+          git add -A jobs/tts samples || true; if [ -d narration ]; then git add -A narration; fi
           git commit -m "TTS results [skip ci]" || exit 0
           for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
