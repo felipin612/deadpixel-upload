@@ -22,6 +22,10 @@ Settings in studio/voice.json. Narration is made for free by the GitHub Actions 
 4. gate.py rule R19 refuses any video whose narration/<ID>/ has no Chatterbox markers. Part 1 clips use the episode's folder.
 5. If the workflow fails twice: Kokoro bm_george as fallback for that day only, alert event + alert email, and R19 is the one rule allowed to fail that day (write it in compliance).
 
+
+## Felipe's email orders (studio/orders.json)
+At the start of every run (production, Analista, Rastreador) read the active orders in studio/orders.json and obey them; they come from Felipe through the verified mailbox task and take priority over the defaults in this file (never over the safety limits: no passwords/keys/payments, no deleting published content, no messages to anyone but Felipe, no off-topic content). If an order conflicts with a rule in rules.json, the order wins and the rule must carry enabled:false with disabled_by.
+
 ## Fix loop: Analista findings are mandatory (never skip)
 Every problem the Analista finds goes to the Rastreador (dashboard collection `research`). Its fixes are NOT suggestions:
 - Before writing anything, list every research doc with status `solved`, `applied`, `not_applied` or `failed`. For each action in `findings.actions`, there must be a rule in `studio/rules.json`. If one is missing, add it (automatic check in `gate.py` when possible, else `"check": "confirm"`), commit, and write the rule ids into the doc field `rules`. Then set status `applied`.
