@@ -10,6 +10,7 @@ Delete files from `v/` (git rm) once Buffer shows the post as sent.
 
 ## Buffer (organization 6b08697bca9ef287f9887aab) — channel ids and slots are in studio/schedule.json
 For every video: run `gate.py check` first (use the slot time as --at). Only on GATE PASS:
+- Re-read studio/schedule.json now (the Rastreador may have changed it this morning). Pass the chosen slot as `gate.py --at`.
 - mcp Buffer `create_post`, `schedulingType: automatic`, `mode: customScheduled`, `dueAt` = next free slot of that platform (ISO with -03:00), never a slot already used that day (check `list_posts` status scheduled/sent).
 - TikTok: `assets:[{video:{url, metadata:{thumbnailOffset: 0}}}]`, `metadata.tiktok:{title: caption, isAiGenerated: true}`, `text` = caption. Rule R5: the first TikTok of the day has no YouTube mention.
 - Instagram Reel: `metadata.instagram:{type:"reel", shouldShareToFeed:true, isAiGenerated:true}`, `assets` video with `thumbnailOffset: 0`, `text` = caption with 8-12 hashtags.

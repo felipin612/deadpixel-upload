@@ -120,6 +120,17 @@
    ],
    "check": "confirm",
    "text": "First frame is the most striking image of the story (not an establishing shot), with the hook as on-screen text (check the frame-1 still)."
+  },
+  {
+   "id": "R12-scheduled-slot",
+   "research": "horarios",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+   ],
+   "check": "auto",
+   "text": "Publish/schedule time (--at) must be one of the slots the Rastreador set in studio/schedule.json for that platform and format."
   }
  ]
 }

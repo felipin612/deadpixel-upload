@@ -31,6 +31,18 @@ All 7 TikToks posted 25-26/11 sit at 0 views while the 2 earlier posts got 115-1
 ## Hook rules (research doc r002)
 TikToks with data lost 64-81% of viewers by second 3. First frame = the most striking image of the story with the hook as on-screen text; spoken hook ≤ 10 words starting at 0.0 s (trim leading silence); no logo, no title card, no slow camera move in the first 2 s.
 
+
+## Posting times: the Rastreador decides, the Publicador obeys
+Every morning the Rastreador rewrites `studio/schedule.json` (slots per platform: TikTok, Instagram Reels, YouTube Shorts, YouTube episode, Instagram Part 1) and explains the choice in `decision`.
+How to choose (in this order; real numbers only, never invented):
+1. The channel's own data: views and 3-second retention of each post by posting hour and weekday (Buffer `list_posts` with metrics, Windsor YouTube/TikTok data, YouTube Analytics through the repo workflow when available). Note how many posts back each hour; with fewer than 3 posts per hour slot, treat it as a HYPOTHESIS.
+2. Where the audience is: the narration is English, so check audience country/timezone data; convert to Buenos Aires time.
+3. Official platform guidance and reputable studies on best posting times per platform (cite them in `decision.sources`).
+4. One experiment at a time: at most one slot per platform may be a test slot (`decision.experiment`), kept for 3 days before judging it.
+Constraints: TikTok max 3 a day and >= 3 h apart (R2); slots between 09:30 and 23:30; the episode slot after the day's production usually finishes (>= 15:00).
+Also write/update the research doc `research/horarios` (problem, evidence, decision, sources, status applied) so the dashboard shows it, and add an event "Horarios nuevos: ...". If the data does not justify a change, keep the slots and say so.
+The Publicador re-reads schedule.json right before scheduling each post and uses the next free slot of that platform; gate rule R12 refuses any other time.
+
 ## Daily timeline (all in the cloud, no device)
 09:02 Analista + Rastreador (scheduled task). 09:31 production starts (scheduled task) and works through the stages below; every hour at :31 until 23:31 a continuation run picks up any unfinished stage.
 Progress is saved in `state/<YYYY-MM-DD>.json` ({"stage": ..., "done": [...], "posts": {...}}) and committed after every stage, so a later run resumes exactly where the last one stopped. If today's state says `complete`, the run ends at once.

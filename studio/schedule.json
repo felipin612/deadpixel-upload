@@ -1,5 +1,5 @@
 {
- "_doc": "Posting slots (America/Argentina/Buenos_Aires). The publisher schedules each post in Buffer with mode customScheduled at the next free slot of its platform. TikTok slots are 4 h apart (rule R2 needs >= 3 h). Change times here only; Analista may propose new slots from audience data. The same slots are set as Buffer posting schedules (queue), so addToQueue also lands on them.",
+ "_doc": "Posting slots (America/Argentina/Buenos_Aires). OWNER: the Rastreador. It rewrites the slots every day from data (see 'how_to_choose' in PRODUCTION.md) and records why in 'decision'. The Publicador reads this file right before scheduling and schedules every post at the next free slot of its platform; gate.py rule R12 refuses any other time.",
  "timezone": "America/Argentina/Buenos_Aires",
  "buffer_organization": "6b08697bca9ef287f9887aab",
  "channels": {
@@ -29,5 +29,13 @@
    ],
    "episode": "19:00"
   }
+ },
+ "decision": {
+  "set_by": "inicial (antes del primer análisis)",
+  "date": "2026-11-26",
+  "reason": "Horarios provisionales: tarde/noche de Buenos Aires = tarde en EE.UU. (la narración es en inglés). Sin datos propios todavía.",
+  "evidence": [],
+  "sources": [],
+  "experiment": null
  }
 }

@@ -97,6 +97,17 @@ def check(a):
                 why = "first TikTok of the day: caption must not mention YouTube" + ("" if ok else " (it does)")
             else:
                 ok, why = True, "not the first TikTok of the day"
+        elif rid == "R12-scheduled-slot":
+            sch = load(os.path.join(HERE, "schedule.json"), {}).get("channels", {}).get(a.platform, {})
+            if a.platform == "youtube":
+                slots = [sch.get("episode")] if a.kind == "episode" else sch.get("shorts", [])
+            elif a.platform == "instagram" and a.kind == "part1":
+                slots = [sch.get("episode_part1")]
+            else:
+                slots = sch.get("slots", [])
+            hm = at.astimezone(TZ).strftime("%H:%M")
+            ok = bool(a.at) and hm in [x for x in slots if x]
+            why = "%s vs Rastreador slots %s" % (hm if a.at else "no --at given", slots)
         elif rid == "R6-hook-at-zero":
             s = leading_silence(a.video)
             ok, why = s <= 0.15, "leading silence %.2f s" % s
@@ -147,7 +158,7 @@ if __name__ == "__main__":
     r = sub.add_parser("record")
     for q in (c, r):
         q.add_argument("--id", required=True)
-        q.add_argument("--platform", required=True, choices=["tiktok", "youtube"])
+        q.add_argument("--platform", required=True, choices=["tiktok", "youtube", "instagram"])
         q.add_argument("--video", required=True)
         q.add_argument("--at")
     c.add_argument("--kind", required=True, choices=["short", "episode", "part1"])
