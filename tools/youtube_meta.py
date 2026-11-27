@@ -1,7 +1,8 @@
 """Run by GitHub Actions: for every jobs/youtube/*.json not yet done, set the custom thumbnail,
 the altered/synthetic-content flag and the playlist on the user's own YouTube channel.
 Secrets (set by the user in GitHub, never in the repo): YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
-Job file: {"video_id": "...", "thumbnail": "covers/EP03_16x9.jpg", "synthetic": true, "playlist_id": "PL..."}"""
+Job file: {"video_id": "...", "thumbnail": "covers/EP03_16x9.jpg", "synthetic": true, "playlist_id": "PL...",
+ "description_prepend": "Full episode: https://youtu.be/<EPISODE_ID>"  (Shorts only, R18 substitute)}"""
 import glob, json, os, sys, urllib.error, urllib.parse, urllib.request
 
 def token():
@@ -45,6 +46,15 @@ def main():
                 call("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet", tok, json.dumps(
                     {"snippet": {"playlistId": job["playlist_id"], "resourceId": {"kind": "youtube#video", "videoId": vid}}}).encode(), "POST")
                 res["playlist"] = "ok"
+            if job.get("description_prepend"):
+                # R18 substitute (Related video has no API): put the episode link at the top of the Short's description
+                v = call("https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" + vid, tok)["items"][0]
+                sn = v["snippet"]; line = job["description_prepend"].strip()
+                if line not in sn.get("description", ""):
+                    sn["description"] = line + "\n\n" + sn.get("description", "")
+                    body = {"id": vid, "snippet": {k: sn[k] for k in ("title", "description", "categoryId", "tags", "defaultLanguage") if k in sn}}
+                    call("https://www.googleapis.com/youtube/v3/videos?part=snippet", tok, json.dumps(body).encode(), "PUT")
+                res["description"] = "ok"
             job["done"] = True
         except Exception as e:
             failed += 1

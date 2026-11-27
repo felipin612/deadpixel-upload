@@ -1,1 +1,23 @@
-{"_doc":"Orders Felipe sent by verified email (DKIM+DMARC pass from felipeandinasilva@colegionorthhills.com.ar). Written by the mailbox task; production, Analista and Rastreador read the active ones at the start of every run and obey them. expires null = until Felipe changes it.","orders":[{"id":"o001","date":"2026-11-27T11:20-03:00","from_message":"1a21d6192804066c","text":"no fijes ningún comentario. continúa con todo lo demás","applied":"R14 desactivada; R3 y R18 dejan de bloquear (solo se pueden hacer a mano en Studio)","active":true,"expires":null}]}
+{
+ "_doc": "Orders Felipe sent by verified email (DKIM+DMARC pass from felipeandinasilva@colegionorthhills.com.ar). Written by the mailbox task; production, Analista and Rastreador read the active ones at the start of every run and obey them. expires null = until Felipe changes it.",
+ "orders": [
+  {
+   "id": "o001",
+   "date": "2026-11-27T11:20-03:00",
+   "from_message": "1a21d6192804066c",
+   "text": "no fijes ningún comentario. continúa con todo lo demás",
+   "applied": "R14 desactivada; R3 y R18 dejan de bloquear (solo se pueden hacer a mano en Studio)",
+   "active": true,
+   "expires": null
+  },
+  {
+   "id": "o002",
+   "date": "2026-11-27T11:32-03:00",
+   "from_message": "1a21d6bfdd4e2ecd",
+   "text": "continúa con las demás taras, publica igual los videos y lo demás que haya que hacer. yo no tengo ni quiero hacer nada desde youtube/tiktok studio, tienes que hacer todas las tareas tu; si no puedes hacer algo, busca una solución inmediata para poder lograr el objetivo.",
+   "applied": "1) Publicar YouTube (EP04 + S10-S12 Shorts) y TikTok (S10-S12) sin esperar nada de Felipe, en las franjas de schedule.json. 2) Nunca dejarle tareas manuales a Felipe (ni listas de pendientes de Studio). 3) Sustituto automático de R18: cuando EP04 tenga id, escribir jobs/youtube/S1x.json con description_prepend 'Full episode: https://youtu.be/<EP04_ID>' (tools/youtube_meta.py lo pone arriba de la descripción del Short por la API) y la descripción de EP04 lista los 3 Shorts. 4) Sustituto de R3: antes de cada TikTok revisar caption y texto en pantalla y suavizar palabras que TikTok restringe (gore, blood, kill, dead body, suicide, etc.); a las 24 h mirar vistas en Windsor/Buffer y si da 0, anotarlo en r001 (sin borrar, R10). 5) R14 sigue desactivada (o001): no fijar comentarios.",
+   "active": true,
+   "expires": null
+  }
+ ]
+}
