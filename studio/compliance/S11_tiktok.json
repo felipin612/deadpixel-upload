@@ -1,0 +1,101 @@
+{
+ "id": "S11",
+ "kind": "short",
+ "platform": "tiktok",
+ "video": "S11_short_9x16.mp4",
+ "checked_at": "2026-11-27T11:18:07-03:00",
+ "publish_at": "2026-11-28T18:00-03:00",
+ "pass": false,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R2-tiktok-spacing",
+   "research": "r001",
+   "ok": true,
+   "detail": "0 TikToks that day, nearest 22.0 h"
+  },
+  {
+   "rule": "R3-content-check",
+   "research": "r001",
+   "ok": false,
+   "detail": "NOT confirmed: do it, then pass --confirm R3-content-check"
+  },
+  {
+   "rule": "R4-ai-label",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R5-exp-no-youtube",
+   "research": "r001",
+   "ok": false,
+   "detail": "first TikTok of the day: caption must not mention YouTube (it does)"
+  },
+  {
+   "rule": "R6-hook-at-zero",
+   "research": "r002",
+   "ok": true,
+   "detail": "leading silence 0.00 s"
+  },
+  {
+   "rule": "R7-hook-onscreen",
+   "research": "r002",
+   "ok": true,
+   "detail": "first caption at 0.00 s"
+  },
+  {
+   "rule": "R8-hook-short",
+   "research": "r002",
+   "ok": true,
+   "detail": "9 words: \"Never clear a train that isn't on the timetable.\""
+  },
+  {
+   "rule": "R9-no-slow-open",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R10-no-judge-24h",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R11-strong-first-frame",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R12-scheduled-slot",
+   "research": "horarios",
+   "ok": true,
+   "detail": "18:00 vs Rastreador slots ['15:00', '18:00', '21:00']"
+  },
+  {
+   "rule": "R13-short-length",
+   "research": "r003",
+   "ok": true,
+   "detail": "duration 32.1 s (allowed 30-60 s)"
+  },
+  {
+   "rule": "R15-caption-question",
+   "research": "r004",
+   "ok": true,
+   "detail": "caption asks a question"
+  },
+  {
+   "rule": "R19-voice-chatterbox",
+   "research": "voz",
+   "ok": true,
+   "detail": "narration/S11: 1 chatterbox segments"
+  }
+ ]
+}

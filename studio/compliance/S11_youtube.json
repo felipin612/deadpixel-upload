@@ -1,0 +1,77 @@
+{
+ "id": "S11",
+ "kind": "short",
+ "platform": "youtube",
+ "video": "S11_short_9x16.mp4",
+ "checked_at": "2026-11-27T11:18:05-03:00",
+ "publish_at": "2026-11-27T18:00-03:00",
+ "pass": false,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R6-hook-at-zero",
+   "research": "r002",
+   "ok": true,
+   "detail": "leading silence 0.00 s"
+  },
+  {
+   "rule": "R7-hook-onscreen",
+   "research": "r002",
+   "ok": true,
+   "detail": "first caption at 0.00 s"
+  },
+  {
+   "rule": "R8-hook-short",
+   "research": "r002",
+   "ok": true,
+   "detail": "9 words: \"Never clear a train that isn't on the timetable.\""
+  },
+  {
+   "rule": "R9-no-slow-open",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R11-strong-first-frame",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R12-scheduled-slot",
+   "research": "horarios",
+   "ok": true,
+   "detail": "18:00 vs Rastreador slots ['14:00', '18:00', '21:00']"
+  },
+  {
+   "rule": "R13-short-length",
+   "research": "r003",
+   "ok": true,
+   "detail": "duration 32.1 s (allowed 30-60 s)"
+  },
+  {
+   "rule": "R14-pinned-question",
+   "research": "r004",
+   "ok": false,
+   "detail": "NOT confirmed: do it, then pass --confirm R14-pinned-question"
+  },
+  {
+   "rule": "R18-shorts-related-video",
+   "research": "r007",
+   "ok": false,
+   "detail": "NOT confirmed: do it, then pass --confirm R18-shorts-related-video"
+  },
+  {
+   "rule": "R19-voice-chatterbox",
+   "research": "voz",
+   "ok": true,
+   "detail": "narration/S11: 1 chatterbox segments"
+  }
+ ]
+}
