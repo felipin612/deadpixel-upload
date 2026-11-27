@@ -1,0 +1,12 @@
+{
+ "out_dir": "narration/S10",
+ "items": [
+  {
+   "name": "S10",
+   "text": "A PS2 train stopped outside my real house.\n\nMy blue door, with the paint coming off at the bottom. My porch light, the one that flickers twice before it stays on. Six dark carriages, and one lit window.\n\nThe game is called SIGNALMAN. Unreleased. Dead Pixel Studios, 2002. You work a railway signal box at night. One rule: clear only the trains on the timetable. Anything else, hold at red.\n\nThe three oh three isn't on the timetable. And there are no train tracks within forty miles of my street. There never have been.\n\nThe full story is on YouTube. Dead Pixel Studios.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  }
+ ]
+}
