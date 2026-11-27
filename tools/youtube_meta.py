@@ -2,12 +2,21 @@
 the altered/synthetic-content flag and the playlist on the user's own YouTube channel.
 Secrets (set by the user in GitHub, never in the repo): YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
 Job file: {"video_id": "...", "thumbnail": "covers/EP03_16x9.jpg", "synthetic": true, "playlist_id": "PL..."}"""
-import glob, json, os, sys, urllib.parse, urllib.request
+import glob, json, os, sys, urllib.error, urllib.parse, urllib.request
 
 def token():
-    data = urllib.parse.urlencode({"client_id": os.environ["YT_CLIENT_ID"], "client_secret": os.environ["YT_CLIENT_SECRET"],
-                                   "refresh_token": os.environ["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
-    return json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token", data))["access_token"]
+    env = {k: os.environ.get(k, "").strip() for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}
+    print("secrets present:", {k: bool(v) for k, v in env.items()},
+          "client id looks right:", env["YT_CLIENT_ID"].endswith(".apps.googleusercontent.com"),
+          "refresh token looks right:", env["YT_REFRESH_TOKEN"].startswith("1//"))
+    data = urllib.parse.urlencode({"client_id": env["YT_CLIENT_ID"], "client_secret": env["YT_CLIENT_SECRET"],
+                                   "refresh_token": env["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
+    try:
+        return json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token", data))["access_token"]
+    except urllib.error.HTTPError as e:
+        body = json.loads(e.read() or b"{}")
+        print("Google token error:", e.code, body.get("error"), body.get("error_description"))
+        raise SystemExit(1)
 
 def call(url, tok, body=None, method="GET", ctype="application/json"):
     req = urllib.request.Request(url, data=body, method=method, headers={"Authorization": "Bearer " + tok, "Content-Type": ctype})
