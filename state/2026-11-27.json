@@ -9,7 +9,8 @@
   "portadas EP04 (10 candidatas; finalistas c07, c02, c03; covers/EP04_16x9.jpg)",
   "S10-S12 render 9:16 (31.0/32.0/33.4 s)",
   "S10-S12 Instagram programados 28/11 12:30/22:00/23:30",
-  "EP04 render 16:9 10:15 (v/EP04.mp4 90 MB)"
+  "EP04 render 16:9 10:15 (v/EP04.mp4 90 MB)",
+  "EP04 Parte 1 9:16 (1:40) Instagram 21:30"
  ],
  "posts": {
   "S07_instagram": {
@@ -41,10 +42,15 @@
    "buffer": "6b098e55b83ec61257d1a673",
    "at": "2026-11-28T23:30-03:00",
    "gate": "PASS"
+  },
+  "EP04P1_instagram": {
+   "buffer": "6b09925718c8c6749bef8b61",
+   "at": "2026-11-27T21:30-03:00",
+   "gate": "PASS"
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T11:35-03:00",
+ "updated": "2026-11-27T11:40-03:00",
  "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
  "notes": [
   "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04."
