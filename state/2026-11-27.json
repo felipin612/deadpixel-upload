@@ -14,7 +14,8 @@
   "YouTube S10 14:00 + EP04 16:00 (27/11), S11 14:00 + S12 18:00 (28/11, límite Buffer 2/día)",
   "TikTok S10-S12 28/11 15:00/18:00/21:00",
   "metrics export 12:36",
-  "13:40 Instagram reconectado (list_channels isDisconnected false); S08/S09/EP04P1/S10-S12 siguen scheduled; S07 no re-programado (R19)"
+  "13:40 Instagram reconectado (list_channels isDisconnected false); S08/S09/EP04P1/S10-S12 siguen scheduled; S07 no re-programado (R19)",
+  "14:33 S10 YouTube enviado (qR1o9pxr6Hs); EP04 sigue scheduled 16:00; metrics export 14:33 (23 posts)"
  ],
  "posts": {
   "S07_instagram": {
@@ -56,7 +57,11 @@
   "S10_youtube": {
    "buffer": "6b09a32dbb117e5ba75a9d18",
    "at": "2026-11-27T14:00-03:00",
-   "gate": "PASS"
+   "gate": "PASS",
+   "status": "sent 14:00:47",
+   "youtube_id": "qR1o9pxr6Hs",
+   "link": "https://www.youtube.com/shorts/qR1o9pxr6Hs",
+   "note_ai_flag": "Buffer muestra isAiGenerated false en S10; jobs/youtube/S10.json pondrá synthetic true por API"
   },
   "EP04_youtube": {
    "buffer": "6b09a32f32c212878fe0e58b",
@@ -92,7 +97,7 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T13:42-03:00",
+ "updated": "2026-11-27T14:34-03:00",
  "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
  "notes": [
   "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04.",
@@ -100,7 +105,7 @@
   "27/11 12:25 (buzón): Felipe ordenó por mail (11:32, orden o002) publicar igual YouTube y TikTok, sin tareas manuales para él; sustitutos automáticos para R18 (link al episodio en la descripción del Short vía jobs/youtube, description_prepend) y R3 (revisión propia de caption/texto + control de vistas a 24 h). Ver studio/orders.json.",
   "27/11 12:37: Instagram desconectado en Buffer (S07 12:30 en error 'lost authorization'). Alerta enviada a Felipe. Buffer permite solo 2 posts de YouTube por día (plan): S11/S12 Shorts pasan al 28/11 14:00/18:00; las franjas de YouTube del 28/11 ya quedan ocupadas (el batch del 28 tendrá que usar 21:00/episodio o el 29)."
  ],
- "metrics_exported_at": "2026-11-27T13:38-03:00",
+ "metrics_exported_at": "2026-11-27T14:33-03:00",
  "alerts_emailed": [
   {
    "alert": "gate_fail_youtube_tiktok_R3_R14_R18",
@@ -113,7 +118,7 @@
    "message_id": "1a21da451c88002e"
   }
  ],
- "next_run": "1) Después de las 16:05: get_post de EP04 (6b09a32f32c212878fe0e58b) y S10 (6b09a32dbb117e5ba75a9d18); con los ids de YouTube escribir jobs/youtube/EP04.json (covers/EP04_16x9.jpg, synthetic, playlist The Lost Library) y jobs/youtube/S10.json, S11.json, S12.json con description_prepend 'Full episode: https://youtu.be/<EP04_ID>' (S11/S12: cuando tengan id el 28/11, o escribir el job con el id cuando salgan). gate.py record con el id real. 2) Instagram: verificar que S08/S09/EP04P1 salgan (sent). 3) Con todo programado y los jobs escritos: stage complete + email 8a.",
+ "next_run": "1) Después de las 16:05: get_post EP04 (6b09a32f32c212878fe0e58b) → jobs/youtube/EP04.json (covers/EP04_16x9.jpg, synthetic, playlist The Lost Library) y jobs/youtube/S10.json {video_id qR1o9pxr6Hs, synthetic true, description_prepend 'Full episode: https://youtu.be/<EP04_ID>'}; S11/S12 jobs el 28/11 cuando tengan id. 2) Instagram: verificar EP04P1/S08/S09 sent. 3) stage complete + email 8a.",
  "blocked_resolved": {
   "reason": "GATE FAIL en YouTube y TikTok: reglas 'confirm' que la nube no puede cumplir (R14 comentario fijado y R18 video relacionado: solo YouTube Studio; R3 Content Check Lite: solo TikTok Studio). No se confirmó nada falso; no se publicó en YouTube/TikTok.",
   "pending": [

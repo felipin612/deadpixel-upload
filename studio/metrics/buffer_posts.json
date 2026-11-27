@@ -1,41 +1,31 @@
 [
  {
+  "post_id": "6b09a32dbb117e5ba75a9d18",
+  "channel": "6b08732a8541f09ecbb31d59",
+  "service": "youtube",
+  "text": "An unreleased PS2 signal box game. One rule: clear only the trains on the timeta",
+  "sentAt": "2026-11-27T17:00:47.517Z",
+  "dueAt": "2026-11-27T17:00:00.000Z",
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
+ },
+ {
   "post_id": "6b08762226830a9766cfd660",
   "channel": "6b08732a8541f09ecbb31d59",
   "service": "youtube",
   "text": "A tackle box was left on the hood of my car. Inside: an unreleased PS2 ice fishi",
   "sentAt": "2026-11-26T18:09:39.000Z",
   "dueAt": "2026-11-26T18:09:39.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8ef00",
@@ -44,36 +34,12 @@
   "text": "Slot 3 on my old PS2 memory card has a save I never made: 99 hours, created Marc",
   "sentAt": "2026-11-26T02:19:30.000Z",
   "dueAt": "2026-11-26T02:19:30.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 66,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 66
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eefe",
@@ -82,36 +48,12 @@
   "text": "The only rule of STILLWATER, an unreleased PS2 fishing game. I broke it.\n\nFull s",
   "sentAt": "2026-11-26T17:51:18.000Z",
   "dueAt": "2026-11-26T17:51:18.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eefc",
@@ -120,36 +62,12 @@
   "text": "A debug build of an unreleased Dead Pixel game. One menu option nobody was suppo",
   "sentAt": "2026-11-26T02:22:05.000Z",
   "dueAt": "2026-11-26T02:22:05.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 38,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 38
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eefa",
@@ -158,36 +76,12 @@
   "text": "STILLWATER's debug lake map has a red square for every catch, and one address on",
   "sentAt": "2026-11-26T17:52:31.000Z",
   "dueAt": "2026-11-26T17:52:31.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eef8",
@@ -196,36 +90,12 @@
   "text": "NIGHTWALK only lets you look forward. The debug menu has one option nobody was s",
   "sentAt": "2026-11-26T12:59:57.000Z",
   "dueAt": "2026-11-26T12:59:57.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eef6",
@@ -234,36 +104,12 @@
   "text": "Every Dead Pixel game credits the whole studio. No names. Ever. But NIGHTWALK ha",
   "sentAt": "2026-11-26T13:30:13.000Z",
   "dueAt": "2026-11-26T13:30:13.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 1,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 1
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eef4",
@@ -272,36 +118,12 @@
   "text": "A black PS2 disc arrived in the mail with no return address. The game is called ",
   "sentAt": "2026-11-26T16:38:52.000Z",
   "dueAt": "2026-11-26T16:38:52.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eef2",
@@ -310,36 +132,12 @@
   "text": "Every night the town on screen has one more house. The newest one has a laundrom",
   "sentAt": "2026-11-26T02:21:04.000Z",
   "dueAt": "2026-11-26T02:21:04.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 1,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 72,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 1,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 72
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eef0",
@@ -348,36 +146,12 @@
   "text": "The counter says \"steps behind you: 1\". I haven't moved. NIGHTWALK, an unrelease",
   "sentAt": "2026-11-26T12:56:16.000Z",
   "dueAt": "2026-11-26T12:56:16.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eeee",
@@ -386,36 +160,12 @@
   "text": "A black PS2 disc from a garage sale. No label, just a hand-drawn logo: Dead Pixe",
   "sentAt": "2026-11-26T02:18:01.000Z",
   "dueAt": "2026-11-26T02:18:01.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 1,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 26,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 1,
+   "engagementRate": 0,
+   "views": 26
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eeec",
@@ -424,36 +174,12 @@
   "text": "I thought it was going to be a normal night shift. I was wrong...",
   "sentAt": "2026-11-25T20:31:29.000Z",
   "dueAt": "2026-11-25T20:31:29.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 1,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 13,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 1,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 13
+  }
  },
  {
   "post_id": "6b08732d4355c929b0c8eeea",
@@ -462,234 +188,66 @@
   "text": "An unreleased PS2 ice fishing game. Every catch is logged with the name of whoev",
   "sentAt": "2026-11-26T17:50:38.000Z",
   "dueAt": "2026-11-26T17:50:38.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7ead5",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "Everyone in this town knew my full name. I'd never been there before… or so I th",
+  "text": "Everyone in this town knew my full name. I'd never been there before\u2026 or so I th",
   "sentAt": "2026-11-25T21:37:26.000Z",
   "dueAt": "2026-11-25T21:37:26.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 6,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 5,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 120,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 10.4,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 3.22,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 6,
+   "comments": 0,
+   "engagementRate": 3.9,
+   "views": 154,
+   "shares": 0,
+   "reach": 51,
+   "totalTimeWatched": 12.5,
+   "averageTimeWatched": 3
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7ead3",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "This PS2 game only boots at 3:33 AM... and every night there's one more house 🏚️",
+  "text": "This PS2 game only boots at 3:33 AM... and every night there's one more house \ud83c\udfda\ufe0f",
   "sentAt": "2026-11-26T02:35:34.000Z",
   "dueAt": "2026-11-26T02:35:34.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0.05,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 1.07,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0.05,
+   "averageTimeWatched": 1.07
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7ead1",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "It only boots at 3:33 AM. The newest house looks like my building 🏚️ Full story ",
+  "text": "It only boots at 3:33 AM. The newest house looks like my building \ud83c\udfda\ufe0f Full story ",
   "sentAt": "2026-11-26T02:47:47.000Z",
   "dueAt": "2026-11-26T02:47:47.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0.25,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 15.41,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0.25,
+   "averageTimeWatched": 15.41
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7eacf",
@@ -698,393 +256,105 @@
   "text": "Never use the rear camera. He wasn't walking when I walked. He was walking when ",
   "sentAt": "2026-11-26T13:01:16.000Z",
   "dueAt": "2026-11-26T13:01:16.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0,
+   "averageTimeWatched": 0
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7eacd",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "I thought it was going to be a normal night shift. I was wrong…. #fyp ",
+  "text": "I thought it was going to be a normal night shift. I was wrong\u2026. #fyp ",
   "sentAt": "2026-11-25T20:28:37.000Z",
   "dueAt": "2026-11-25T20:28:37.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 5,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 3.5,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 143,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 14.33,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 3.66,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 5,
+   "comments": 0,
+   "engagementRate": 2.87,
+   "views": 174,
+   "shares": 0,
+   "reach": 49,
+   "totalTimeWatched": 16.52,
+   "averageTimeWatched": 3.62
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7eacb",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "This unreleased PS2 game had one real name in the credits 🎮 Full story on YouTub",
+  "text": "This unreleased PS2 game had one real name in the credits \ud83c\udfae Full story on YouTub",
   "sentAt": "2026-11-26T16:35:53.000Z",
   "dueAt": "2026-11-26T16:35:53.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0,
+   "averageTimeWatched": 0
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7eac9",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "Never load this save file. It keeps counting while the console is off 👁️ Full st",
+  "text": "Never load this save file. It keeps counting while the console is off \ud83d\udc41\ufe0f Full st",
   "sentAt": "2026-11-26T02:46:33.000Z",
   "dueAt": "2026-11-26T02:46:33.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0.05,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 3.61,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0.05,
+   "averageTimeWatched": 3.61
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7eac7",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "The counter says \"steps behind you: 1\". I haven't moved 👣 Full story on YouTube:",
+  "text": "The counter says \"steps behind you: 1\". I haven't moved \ud83d\udc63 Full story on YouTube:",
   "sentAt": "2026-11-26T12:58:00.000Z",
   "dueAt": "2026-11-26T12:58:00.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 0,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0,
+   "averageTimeWatched": 0
+  }
  },
  {
   "post_id": "6b0872e33dcfb575daa7eac5",
   "channel": "6b0872e28541f09ecbb31b3d",
   "service": "tiktok",
-  "text": "Never press \"Spawn Tester\" 🎮 Two controllers. I only own one. Full story on YouT",
+  "text": "Never press \"Spawn Tester\" \ud83c\udfae Two controllers. I only own one. Full story on YouT",
   "sentAt": "2026-11-26T02:43:38.000Z",
   "dueAt": "2026-11-26T02:43:38.000Z",
-  "metrics": [
-   {
-    "type": "reactions",
-    "name": "Reactions",
-    "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "comments",
-    "name": "Comments",
-    "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "engagementRate",
-    "name": "Eng. Rate",
-    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 0,
-    "unit": "percentage"
-   },
-   {
-    "type": "views",
-    "name": "Video Views",
-    "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "shares",
-    "name": "Shares",
-    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "reach",
-    "name": "Reach",
-    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 0,
-    "unit": "count"
-   },
-   {
-    "type": "totalTimeWatched",
-    "name": "Watch Time (min)",
-    "description": "The total time people spent watching your video, added up over every view.",
-    "value": 0.02,
-    "unit": "count"
-   },
-   {
-    "type": "averageTimeWatched",
-    "name": "Avg. Watch Time (sec)",
-    "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 1.66,
-    "unit": "count"
-   }
-  ]
+  "metrics": {
+   "reactions": 0,
+   "comments": 0,
+   "engagementRate": 0,
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "totalTimeWatched": 0.02,
+   "averageTimeWatched": 1.66
+  }
  }
 ]
