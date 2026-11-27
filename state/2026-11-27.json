@@ -1,8 +1,9 @@
 {
- "stage": "script",
+ "stage": "voice+scenes",
  "done": [
   "fixloop (todos los fixes r001-r007 ya son reglas R1-R18)",
-  "instagram_S07-S09"
+  "instagram_S07-S09",
+  "script EP04 SIGNALMAN + S10-S12 (studio/ep04, studio/shorts4)"
  ],
  "posts": {
   "S07_instagram": {
@@ -22,5 +23,5 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T09:36-03:00"
+ "updated": "2026-11-27T09:52-03:00"
 }
