@@ -4,7 +4,9 @@
   "fixloop (todos los fixes r001-r007 ya son reglas R1-R18)",
   "instagram_S07-S09",
   "script EP04 SIGNALMAN + S10-S12 (studio/ep04, studio/shorts4)",
-  "voz EP04 Chatterbox (narration/EP04, 14 escenas; pausas alargadas + atempo 0.93 → 10:15)"
+  "voz EP04 Chatterbox (narration/EP04, 14 escenas; pausas alargadas + atempo 0.93 → 10:15)",
+  "voz S10-S12 v2 Chatterbox (28.6/30.3/31.6 s)",
+  "portadas EP04 (10 candidatas; finalistas c07, c02, c03; covers/EP04_16x9.jpg)"
  ],
  "posts": {
   "S07_instagram": {
@@ -24,7 +26,7 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T10:50-03:00",
+ "updated": "2026-11-27T11:05-03:00",
  "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
  "notes": [
   "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04."
