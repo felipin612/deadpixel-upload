@@ -1,5 +1,5 @@
 {
- "stage": "voice+scenes",
+ "stage": "voz_pending",
  "done": [
   "fixloop (todos los fixes r001-r007 ya son reglas R1-R18)",
   "instagram_S07-S09",
@@ -23,5 +23,6 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T09:52-03:00"
+ "updated": "2026-11-27T09:57-03:00",
+ "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after"
 }
