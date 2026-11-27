@@ -23,8 +23,17 @@ jobs:
           pip install --quiet torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install --quiet chatterbox-tts
       - run: python tools/tts_chatterbox.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tts-output
+          path: |
+            samples/
+            narration/
+          if-no-files-found: ignore
       - if: always()
         run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git pull --rebase origin main || true
-          git add jobs/tts samples narration 2>/dev/null; git commit -m "TTS results [skip ci]" && git push || true
+          git add -A jobs/tts samples narration 2>/dev/null || true
+          git commit -m "TTS results [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done

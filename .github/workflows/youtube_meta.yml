@@ -18,4 +18,4 @@ jobs:
       - if: always()
         run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add jobs/youtube && git commit -m "YouTube meta results [skip ci]" && git push || true
+          git add jobs/youtube; git commit -m "YouTube meta results [skip ci]" || exit 0; for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
