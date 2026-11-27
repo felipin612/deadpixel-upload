@@ -2,10 +2,10 @@
  "id": "S10",
  "kind": "short",
  "platform": "tiktok",
- "video": "S10_short_9x16.mp4",
- "checked_at": "2026-11-27T11:03:04-03:00",
+ "video": "S10.mp4",
+ "checked_at": "2026-11-27T12:34:49-03:00",
  "publish_at": "2026-11-28T15:00-03:00",
- "pass": false,
+ "pass": true,
  "results": [
   {
    "rule": "R1-no-repost",
@@ -18,12 +18,6 @@
    "research": "r001",
    "ok": true,
    "detail": "0 TikToks that day, nearest 19.0 h"
-  },
-  {
-   "rule": "R3-content-check",
-   "research": "r001",
-   "ok": false,
-   "detail": "NOT confirmed: do it, then pass --confirm R3-content-check"
   },
   {
    "rule": "R4-ai-label",

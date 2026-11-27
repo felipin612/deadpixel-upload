@@ -2,10 +2,10 @@
  "id": "S11",
  "kind": "short",
  "platform": "tiktok",
- "video": "S11_short_9x16.mp4",
- "checked_at": "2026-11-27T11:18:07-03:00",
+ "video": "S11.mp4",
+ "checked_at": "2026-11-27T12:35:54-03:00",
  "publish_at": "2026-11-28T18:00-03:00",
- "pass": false,
+ "pass": true,
  "results": [
   {
    "rule": "R1-no-repost",
@@ -17,13 +17,7 @@
    "rule": "R2-tiktok-spacing",
    "research": "r001",
    "ok": true,
-   "detail": "0 TikToks that day, nearest 22.0 h"
-  },
-  {
-   "rule": "R3-content-check",
-   "research": "r001",
-   "ok": false,
-   "detail": "NOT confirmed: do it, then pass --confirm R3-content-check"
+   "detail": "1 TikToks that day, nearest 3.0 h"
   },
   {
    "rule": "R4-ai-label",
@@ -34,8 +28,8 @@
   {
    "rule": "R5-exp-no-youtube",
    "research": "r001",
-   "ok": false,
-   "detail": "first TikTok of the day: caption must not mention YouTube (it does)"
+   "ok": true,
+   "detail": "not the first TikTok of the day"
   },
   {
    "rule": "R6-hook-at-zero",

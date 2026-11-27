@@ -2,10 +2,10 @@
  "id": "S12",
  "kind": "short",
  "platform": "youtube",
- "video": "S12_short_9x16.mp4",
- "checked_at": "2026-11-27T11:18:06-03:00",
- "publish_at": "2026-11-27T21:00-03:00",
- "pass": false,
+ "video": "S12.mp4",
+ "checked_at": "2026-11-27T12:35:33-03:00",
+ "publish_at": "2026-11-28T18:00-03:00",
+ "pass": true,
  "results": [
   {
    "rule": "R1-no-repost",
@@ -47,25 +47,13 @@
    "rule": "R12-scheduled-slot",
    "research": "horarios",
    "ok": true,
-   "detail": "21:00 vs Rastreador slots ['14:00', '18:00', '21:00']"
+   "detail": "18:00 vs Rastreador slots ['14:00', '18:00', '21:00']"
   },
   {
    "rule": "R13-short-length",
    "research": "r003",
    "ok": true,
    "detail": "duration 33.5 s (allowed 30-60 s)"
-  },
-  {
-   "rule": "R14-pinned-question",
-   "research": "r004",
-   "ok": false,
-   "detail": "NOT confirmed: do it, then pass --confirm R14-pinned-question"
-  },
-  {
-   "rule": "R18-shorts-related-video",
-   "research": "r007",
-   "ok": false,
-   "detail": "NOT confirmed: do it, then pass --confirm R18-shorts-related-video"
   },
   {
    "rule": "R19-voice-chatterbox",

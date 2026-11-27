@@ -1,5 +1,5 @@
 {
- "stage": "publish",
+ "stage": "publish_verify",
  "done": [
   "fixloop (todos los fixes r001-r007 ya son reglas R1-R18)",
   "instagram_S07-S09",
@@ -10,13 +10,17 @@
   "S10-S12 render 9:16 (31.0/32.0/33.4 s)",
   "S10-S12 Instagram programados 28/11 12:30/22:00/23:30",
   "EP04 render 16:9 10:15 (v/EP04.mp4 90 MB)",
-  "EP04 Parte 1 9:16 (1:40) Instagram 21:30"
+  "EP04 Parte 1 9:16 (1:40) Instagram 21:30",
+  "YouTube S10 14:00 + EP04 16:00 (27/11), S11 14:00 + S12 18:00 (28/11, límite Buffer 2/día)",
+  "TikTok S10-S12 28/11 15:00/18:00/21:00",
+  "metrics export 12:36"
  ],
  "posts": {
   "S07_instagram": {
    "buffer": "6b0978a31fd46e62e7433d00",
    "at": "2026-11-27T12:30-03:00",
-   "gate": "PASS"
+   "gate": "PASS",
+   "status": "error: Buffer perdió la autorización de Instagram (canal desconectado). Re-programar cuando Felipe reconecte."
   },
   "S08_instagram": {
    "buffer": "6b0978af658222306c116087",
@@ -47,25 +51,68 @@
    "buffer": "6b09925718c8c6749bef8b61",
    "at": "2026-11-27T21:30-03:00",
    "gate": "PASS"
+  },
+  "S10_youtube": {
+   "buffer": "6b09a32dbb117e5ba75a9d18",
+   "at": "2026-11-27T14:00-03:00",
+   "gate": "PASS"
+  },
+  "EP04_youtube": {
+   "buffer": "6b09a32f32c212878fe0e58b",
+   "at": "2026-11-27T16:00-03:00",
+   "gate": "PASS"
+  },
+  "S11_youtube": {
+   "buffer": "6b09a34d32c212878fe0f77f",
+   "at": "2026-11-28T14:00-03:00",
+   "gate": "PASS",
+   "note": "Buffer limita YouTube a 2 publicaciones por día: 27/11 18:00 y 21:00 rechazadas; siguiente franja libre del Rastreador"
+  },
+  "S12_youtube": {
+   "buffer": "6b09a34e34d224b14a95faf5",
+   "at": "2026-11-28T18:00-03:00",
+   "gate": "PASS",
+   "note": "límite Buffer 2/día en YouTube"
+  },
+  "S10_tiktok": {
+   "buffer": "6b09a356bb117e5ba75aac57",
+   "at": "2026-11-28T15:00-03:00",
+   "gate": "PASS"
+  },
+  "S11_tiktok": {
+   "buffer": "6b09a363b83ec61257dc67c4",
+   "at": "2026-11-28T18:00-03:00",
+   "gate": "PASS"
+  },
+  "S12_tiktok": {
+   "buffer": "6b09a364bb117e5ba75aafa3",
+   "at": "2026-11-28T21:00-03:00",
+   "gate": "PASS"
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T11:45-03:00",
+ "updated": "2026-11-27T12:37-03:00",
  "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
  "notes": [
   "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04.",
   "27/11 11:25: Felipe respondió por mail (11:20) 'no fijes ningún comentario. continúa con todo lo demás'. R14, R18 y R3 desactivadas en rules.json (enabled:false). Seguir publicando YouTube/TikTok en los horarios del Rastreador.",
-  "27/11 12:25 (buzón): Felipe ordenó por mail (11:32, orden o002) publicar igual YouTube y TikTok, sin tareas manuales para él; sustitutos automáticos para R18 (link al episodio en la descripción del Short vía jobs/youtube, description_prepend) y R3 (revisión propia de caption/texto + control de vistas a 24 h). Ver studio/orders.json."
+  "27/11 12:25 (buzón): Felipe ordenó por mail (11:32, orden o002) publicar igual YouTube y TikTok, sin tareas manuales para él; sustitutos automáticos para R18 (link al episodio en la descripción del Short vía jobs/youtube, description_prepend) y R3 (revisión propia de caption/texto + control de vistas a 24 h). Ver studio/orders.json.",
+  "27/11 12:37: Instagram desconectado en Buffer (S07 12:30 en error 'lost authorization'). Alerta enviada a Felipe. Buffer permite solo 2 posts de YouTube por día (plan): S11/S12 Shorts pasan al 28/11 14:00/18:00; las franjas de YouTube del 28/11 ya quedan ocupadas (el batch del 28 tendrá que usar 21:00/episodio o el 29)."
  ],
- "metrics_exported_at": "2026-11-27T10:06-03:00",
+ "metrics_exported_at": "2026-11-27T12:36-03:00",
  "alerts_emailed": [
   {
    "alert": "gate_fail_youtube_tiktok_R3_R14_R18",
    "at": "2026-11-27T11:35-03:00",
    "message_id": "1a21d5f566db38aa"
+  },
+  {
+   "alert": "instagram_disconnected_buffer",
+   "at": "2026-11-27T12:34-03:00",
+   "message_id": "1a21da451c88002e"
   }
  ],
- "next_run": "NO HAY BLOQUEO ni corrida trabajando (el buzón solo actualizó notas a las 12:25; la última corrida de producción terminó 11:34): la próxima corrida de producción continúa YA, sin esperar los 50 min. Publicar por Buffer, con GATE PASS (R3/R14/R18 desactivadas): S10 Short 14:00, EP04 YouTube 16:00, S11 Short 18:00, S12 Short 21:00; TikTok S10-S12 28/11 15:00/18:00/21:00 (re-leer schedule.json). Cuando EP04 tenga id: jobs/youtube/EP04.json (cover, synthetic, playlist) y jobs/youtube/S10-S12.json con description_prepend (orden o002). Luego verificar Reels de Instagram (sent) y enlaces; resumen 8a al completar.",
+ "next_run": "1) Después de las 16:05: get_post de EP04 (6b09a32f32c212878fe0e58b) y S10 (6b09a32dbb117e5ba75a9d18); con los ids de YouTube escribir jobs/youtube/EP04.json (covers/EP04_16x9.jpg, synthetic, playlist The Lost Library) y jobs/youtube/S10.json, S11.json, S12.json con description_prepend 'Full episode: https://youtu.be/<EP04_ID>' (S11/S12: cuando tengan id el 28/11, o escribir el job con el id cuando salgan). gate.py record con el id real. 2) Instagram: si list_channels muestra isDisconnected false, re-programar S07 en la próxima franja libre de Instagram (gate primero) y verificar S08/S09/EP04P1. 3) Con todo programado y los jobs escritos: stage complete + email 8a.",
  "blocked_resolved": {
   "reason": "GATE FAIL en YouTube y TikTok: reglas 'confirm' que la nube no puede cumplir (R14 comentario fijado y R18 video relacionado: solo YouTube Studio; R3 Content Check Lite: solo TikTok Studio). No se confirmó nada falso; no se publicó en YouTube/TikTok.",
   "pending": [
