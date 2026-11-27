@@ -1,0 +1,33 @@
+{
+ "out_dir": "samples",
+ "items": [
+  {
+   "name": "B_chatterbox_default",
+   "text": "Never use the rear camera in this PS2 game.\n\nNIGHTWALK only lets you look forward. But the debug menu has one option nobody was supposed to touch. Rear camera.\n\nI pressed it. For the first time I saw my character. A grey figure with a lantern. And ten steps behind him, another one. Same hood. No lantern.\n\nI switched back and walked. Switched again. Five steps. Then two.\n\nHe wasn't walking when I walked. He was walking when I looked.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "C_george_tenso",
+   "text": "Never use the rear camera in this PS2 game.\n\nNIGHTWALK only lets you look forward. But the debug menu has one option nobody was supposed to touch. Rear camera.\n\nI pressed it. For the first time I saw my character. A grey figure with a lantern. And ten steps behind him, another one. Same hood. No lantern.\n\nI switched back and walked. Switched again. Five steps. Then two.\n\nHe wasn't walking when I walked. He was walking when I looked.",
+   "ref": "assets/voices/ref_bm_george.wav",
+   "exaggeration": 0.65,
+   "cfg_weight": 0.35
+  },
+  {
+   "name": "D_onyx_grave",
+   "text": "Never use the rear camera in this PS2 game.\n\nNIGHTWALK only lets you look forward. But the debug menu has one option nobody was supposed to touch. Rear camera.\n\nI pressed it. For the first time I saw my character. A grey figure with a lantern. And ten steps behind him, another one. Same hood. No lantern.\n\nI switched back and walked. Switched again. Five steps. Then two.\n\nHe wasn't walking when I walked. He was walking when I looked.",
+   "ref": "assets/voices/ref_am_onyx.wav",
+   "exaggeration": 0.6,
+   "cfg_weight": 0.4
+  },
+  {
+   "name": "E_lewis_susurro",
+   "text": "Never use the rear camera in this PS2 game.\n\nNIGHTWALK only lets you look forward. But the debug menu has one option nobody was supposed to touch. Rear camera.\n\nI pressed it. For the first time I saw my character. A grey figure with a lantern. And ten steps behind him, another one. Same hood. No lantern.\n\nI switched back and walked. Switched again. Five steps. Then two.\n\nHe wasn't walking when I walked. He was walking when I looked.",
+   "ref": "assets/voices/ref_bm_lewis.wav",
+   "exaggeration": 0.45,
+   "cfg_weight": 0.3
+  }
+ ]
+}
