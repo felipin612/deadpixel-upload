@@ -23,6 +23,9 @@
   }
  },
  "started": "2026-11-27T09:33-03:00",
- "updated": "2026-11-27T09:57-03:00",
- "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after"
+ "updated": "2026-11-27T10:05-03:00",
+ "voice": "Chatterbox via TTS workflow (studio/voice.json, R19); shorts job pushed first, episode job after",
+ "notes": [
+  "S10-S12 Chatterbox v1 salieron de 18-23 s (R13 exige 30-60): guiones alargados a ~105 palabras; se re-encolan en el workflow cuando termine el job del episodio (run 46002207400) para no re-generar EP04."
+ ]
 }
