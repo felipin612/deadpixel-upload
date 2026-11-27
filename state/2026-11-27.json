@@ -18,7 +18,8 @@
     "14:33 S10 YouTube enviado (qR1o9pxr6Hs); EP04 sigue scheduled 16:00; metrics export 14:33 (23 posts)",
     "16:07 EP04 YouTube enviado (y6zUGM1cUaw); jobs/youtube/EP04.json (portada, AI flag; sin playlist_id: no hay id registrado de The Lost Library) y S10.json (link al episodio); metrics export 15:35 (23 posts)",
     "16:10 jobs/youtube EP04 (thumbnail ok, synthetic ok) y S10 (synthetic ok, description ok); dashboard publicador done; stage complete; mail 8a enviado",
-    "16:35 metrics export (24 posts sent, 30 días)"
+    "16:35 metrics export (24 posts sent, 30 días)",
+    "18:36 metrics export (25 posts sent, 30 días)"
   ],
   "posts": {
     "S07_instagram": {
@@ -111,7 +112,7 @@
     "27/11 12:25 (buzón): Felipe ordenó por mail (11:32, orden o002) publicar igual YouTube y TikTok, sin tareas manuales para él; sustitutos automáticos para R18 (link al episodio en la descripción del Short vía jobs/youtube, description_prepend) y R3 (revisión propia de caption/texto + control de vistas a 24 h). Ver studio/orders.json.",
     "27/11 12:37: Instagram desconectado en Buffer (S07 12:30 en error 'lost authorization'). Alerta enviada a Felipe. Buffer permite solo 2 posts de YouTube por día (plan): S11/S12 Shorts pasan al 28/11 14:00/18:00; las franjas de YouTube del 28/11 ya quedan ocupadas (el batch del 28 tendrá que usar 21:00/episodio o el 29)."
   ],
-  "metrics_exported_at": "2026-11-27T17:35-03:00",
+  "metrics_exported_at": "2026-11-27T18:36-03:00",
   "alerts_emailed": [
     {
       "alert": "gate_fail_youtube_tiktok_R3_R14_R18",
