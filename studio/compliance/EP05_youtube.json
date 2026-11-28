@@ -1,0 +1,47 @@
+{
+ "id": "EP05",
+ "kind": "episode",
+ "platform": "youtube",
+ "video": "EP05.mp4",
+ "checked_at": "2026-11-28T11:11:32-03:00",
+ "publish_at": "2026-12-01T16:00-03:00",
+ "pass": true,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R12-scheduled-slot",
+   "research": "horarios",
+   "ok": true,
+   "detail": "16:00 vs Rastreador slots ['16:00']"
+  },
+  {
+   "rule": "R19-voice-chatterbox",
+   "research": "voz",
+   "ok": true,
+   "detail": "narration/EP05: 14 chatterbox segments"
+  },
+  {
+   "rule": "R20-gate-current",
+   "research": "r004",
+   "ok": true,
+   "detail": "enforced by 'gate.py record' (needs this report with pass:true and every enabled rule)"
+  },
+  {
+   "rule": "R24-youtube-buffer-limit",
+   "research": "r011",
+   "ok": true,
+   "detail": "Buffer YouTube posts in the 24 h before/after: 0/0 (max 1 so this is the 2nd)"
+  },
+  {
+   "rule": "R25-episode-by-api",
+   "research": "r011",
+   "ok": true,
+   "detail": "confirmed by producer"
+  }
+ ]
+}
