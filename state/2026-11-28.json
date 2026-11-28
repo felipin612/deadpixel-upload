@@ -1,7 +1,7 @@
 {
- "stage": "render_episode",
+ "stage": "episode_upload",
  "started": "2026-11-28T09:35-03:00",
- "updated": "2026-11-28T10:48-03:00",
+ "updated": "2026-11-28T11:13-03:00",
  "voice": "Chatterbox via TTS workflow",
  "done": [
   "fixloop: 12 docs research; todas las acciones ya son reglas R1-R25 (sin not_applied/failed)",
@@ -16,7 +16,9 @@
   "voz EP05 Chatterbox (14 escenas, 375 s de habla; build_ep: pausas + atempo 0.93 + pausas 9,6 s → 10:15)",
   "render EP05 16:9 en curso (3 workers) + Parte 1 9:16 (build_p1.py)",
   "metadata EP05 (studio/ep05/EP05_upload.json, capítulos)",
-  "EP05 Parte 1 9:16 (1:41, corta a negro a mitad de frase) programada Instagram 28/11 21:30 (GATE PASS)"
+  "EP05 Parte 1 9:16 (1:41, corta a negro a mitad de frase) programada Instagram 28/11 21:30 (GATE PASS)",
+  "EP05 16:9 renderizado (10:15, v/EP05.mp4 83 MB)",
+  "EP05: GATE FAIL R24 para 28/11, 29/11 y 30/11 16:00 (gate.py cuenta los Shorts de Buffer aunque el episodio sube por API). Primer slot del Rastreador con GATE PASS: 01/12 16:00. Job jobs/upload/EP05.json empujado (workflow youtube_upload.yml)"
  ],
  "posts": {
   "S13_youtube": {
@@ -81,5 +83,7 @@
   }
  },
  "alerts_emailed": [],
- "notes": []
+ "notes": [
+  "28/11 11:10: gate.py aplica R24 (límite Buffer YouTube) también al episodio que sube por API (R25); por eso EP05 quedó para 01/12 16:00. No se editó gate.py ni rules.json. Propuesta para Felipe/Rastreador: que R24 excluya el episodio subido por API."
+ ]
 }
