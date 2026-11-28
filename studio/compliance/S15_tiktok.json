@@ -1,0 +1,119 @@
+{
+ "id": "S15",
+ "kind": "short",
+ "platform": "tiktok",
+ "video": "S15.mp4",
+ "checked_at": "2026-11-28T09:50:18-03:00",
+ "publish_at": "2026-11-29T21:00-03:00",
+ "pass": true,
+ "results": [
+  {
+   "rule": "R1-no-repost",
+   "research": "r001",
+   "ok": true,
+   "detail": "new file"
+  },
+  {
+   "rule": "R2-tiktok-spacing",
+   "research": "r001",
+   "ok": true,
+   "detail": "2 TikToks that day, nearest 3.0 h"
+  },
+  {
+   "rule": "R4-ai-label",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R5-exp-no-youtube",
+   "research": "r001",
+   "ok": true,
+   "detail": "not the first TikTok of the day"
+  },
+  {
+   "rule": "R6-hook-at-zero",
+   "research": "r002",
+   "ok": true,
+   "detail": "leading silence 0.00 s"
+  },
+  {
+   "rule": "R7-hook-onscreen",
+   "research": "r002",
+   "ok": true,
+   "detail": "first caption at 0.00 s"
+  },
+  {
+   "rule": "R8-hook-short",
+   "research": "r002",
+   "ok": true,
+   "detail": "10 words: 'Every Dead Pixel game was built on the same lake.'"
+  },
+  {
+   "rule": "R9-no-slow-open",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R10-no-judge-24h",
+   "research": "r001",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R11-strong-first-frame",
+   "research": "r002",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R12-scheduled-slot",
+   "research": "horarios",
+   "ok": true,
+   "detail": "21:00 vs Rastreador slots ['15:00', '18:00', '21:00']"
+  },
+  {
+   "rule": "R13-short-length",
+   "research": "r003",
+   "ok": true,
+   "detail": "duration 30.0 s (allowed 30-60 s)"
+  },
+  {
+   "rule": "R15-caption-question",
+   "research": "r004",
+   "ok": true,
+   "detail": "caption asks a question"
+  },
+  {
+   "rule": "R19-voice-chatterbox",
+   "research": "voz",
+   "ok": true,
+   "detail": "narration/S15: 1 chatterbox segments"
+  },
+  {
+   "rule": "R20-gate-current",
+   "research": "r004",
+   "ok": true,
+   "detail": "enforced by 'gate.py record' (needs this report with pass:true and every enabled rule)"
+  },
+  {
+   "rule": "R21-tiktok-circuit-breaker",
+   "research": "r001",
+   "ok": true,
+   "detail": "only 0 TikToks with 24 h Buffer metrics: no verdict yet"
+  },
+  {
+   "rule": "R22-tiktok-country-log",
+   "research": "r009",
+   "ok": true,
+   "detail": "confirmed by producer"
+  },
+  {
+   "rule": "R23-beat-by-8s",
+   "research": "r010",
+   "ok": true,
+   "detail": "confirmed by producer"
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
- "stage": "render_shorts",
+ "stage": "episode_voz_pending",
  "started": "2026-11-28T09:35-03:00",
- "updated": "2026-11-28T09:45-03:00",
+ "updated": "2026-11-28T09:55-03:00",
  "voice": "Chatterbox via TTS workflow",
  "done": [
   "fixloop: 12 docs research; todas las acciones ya son reglas R1-R25 (sin not_applied/failed)",
@@ -11,9 +11,65 @@
   "portadas EP05: 10 candidatas, finalistas c02 (principal, covers/EP05_16x9.jpg), c06, c07",
   "voz S13-S15 Chatterbox (30,3/32,5/30,2 s)",
   "R25: workflow youtube_upload.yml + tools/youtube_upload_api.py (subida del episodio por API, programado con publishAt)",
-  "textos de publicación S13-S15 + EP05P1 (studio/posts, studio/shorts5)"
+  "textos de publicación S13-S15 + EP05P1 (studio/posts, studio/shorts5)",
+  "S13-S15 render 9:16 (30,2/32,3/30,0 s) y programados (GATE PASS): YouTube 29/11 14:00, 30/11 10:00, 30/11 14:00 (R24: hoy 14:00/18:00 ocupados por S11/S12); TikTok 29/11 15:00/18:00/21:00; Instagram 29/11 12:30/22:00/23:30"
  ],
- "posts": {},
+ "posts": {
+  "S13_youtube": {
+   "buffer": "6b0acddeb8ec87c6cec5c2e5",
+   "at": "2026-11-29T14:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S14_youtube": {
+   "buffer": "6b0acde80f9559e0ce115118",
+   "at": "2026-11-30T10:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S15_youtube": {
+   "buffer": "6b0acdf2b8ec87c6cec5c6cc",
+   "at": "2026-11-30T14:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S13_tiktok": {
+   "buffer": "6b0acdfec6d7f1e72241c407",
+   "at": "2026-11-29T15:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S14_tiktok": {
+   "buffer": "6b0ace06b8ec87c6cec5d5d4",
+   "at": "2026-11-29T18:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S15_tiktok": {
+   "buffer": "6b0ace0f8e7dd71de78c3b15",
+   "at": "2026-11-29T21:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S13_instagram": {
+   "buffer": "6b0ace18be536564e42d130f",
+   "at": "2026-11-29T12:30-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S14_instagram": {
+   "buffer": "6b0ace20c6d7f1e72241d431",
+   "at": "2026-11-29T22:00-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  },
+  "S15_instagram": {
+   "buffer": "6b0ace28be536564e42d1a79",
+   "at": "2026-11-29T23:30-03:00",
+   "gate": "PASS",
+   "status": "scheduled"
+  }
+ },
  "alerts_emailed": [],
  "notes": []
 }
