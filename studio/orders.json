@@ -18,6 +18,15 @@
    "applied": "1) Publicar YouTube (EP04 + S10-S12 Shorts) y TikTok (S10-S12) sin esperar nada de Felipe, en las franjas de schedule.json. 2) Nunca dejarle tareas manuales a Felipe (ni listas de pendientes de Studio). 3) Sustituto automático de R18: cuando EP04 tenga id, escribir jobs/youtube/S1x.json con description_prepend 'Full episode: https://youtu.be/<EP04_ID>' (tools/youtube_meta.py lo pone arriba de la descripción del Short por la API) y la descripción de EP04 lista los 3 Shorts. 4) Sustituto de R3: antes de cada TikTok revisar caption y texto en pantalla y suavizar palabras que TikTok restringe (gore, blood, kill, dead body, suicide, etc.); a las 24 h mirar vistas en Windsor/Buffer y si da 0, anotarlo en r001 (sin borrar, R10). 5) R14 sigue desactivada (o001): no fijar comentarios.",
    "active": true,
    "expires": null
+  },
+  {
+   "id": "o003",
+   "date": "2026-11-27T21:56-03:00",
+   "from_message": "1a21fa765e908493",
+   "text": "necesito que empieces a publicar los reels de instagram por favor. acuérdate que también se deben analizar las cosas que pueden estar provocando una escasez de reproducciones, principalmente en tiktok. si lo haces ahora, envíame el informe cuando termines",
+   "applied": "1) Instagram Reels: ya se publican automáticamente por Buffer (R16-R17). Verificado 27/11 22:18: S07 (16:33), EP04 Parte 1 (21:31) y S08 (22:01, tipo reel, instagram.com/reel/DgRBn2_Py0K) enviados; S09 23:30, S10-S12 28/11 programados. Cada short nuevo sigue yendo también a Reels. 2) Análisis TikTok hecho y enviado por mail; encargo r008 en el dashboard para Analista/Rastreador: medir S10-S12 TikTok a 24 h (29/11 15:00-21:00) y decidir con esos datos; informe a Felipe por mail después de esa medición.",
+   "active": true,
+   "expires": "2026-11-30"
   }
  ]
 }
