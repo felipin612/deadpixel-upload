@@ -1,7 +1,7 @@
 {
- "stage": "episode_upload",
+ "stage": "complete",
  "started": "2026-11-28T09:35-03:00",
- "updated": "2026-11-28T11:13-03:00",
+ "updated": "2026-11-28T11:20-03:00",
  "voice": "Chatterbox via TTS workflow",
  "done": [
   "fixloop: 12 docs research; todas las acciones ya son reglas R1-R25 (sin not_applied/failed)",
@@ -18,7 +18,8 @@
   "metadata EP05 (studio/ep05/EP05_upload.json, capítulos)",
   "EP05 Parte 1 9:16 (1:41, corta a negro a mitad de frase) programada Instagram 28/11 21:30 (GATE PASS)",
   "EP05 16:9 renderizado (10:15, v/EP05.mp4 83 MB)",
-  "EP05: GATE FAIL R24 para 28/11, 29/11 y 30/11 16:00 (gate.py cuenta los Shorts de Buffer aunque el episodio sube por API). Primer slot del Rastreador con GATE PASS: 01/12 16:00. Job jobs/upload/EP05.json empujado (workflow youtube_upload.yml)"
+  "EP05: GATE FAIL R24 para 28/11, 29/11 y 30/11 16:00 (gate.py cuenta los Shorts de Buffer aunque el episodio sube por API). Primer slot del Rastreador con GATE PASS: 01/12 16:00. Job jobs/upload/EP05.json empujado (workflow youtube_upload.yml)",
+  "EP05 subido por la API de YouTube (0FYpMwxcemk), programado 01/12 16:00, containsSyntheticMedia true, portada y playlist ok; jobs/youtube/EP05.json escrito"
  ],
  "posts": {
   "S13_youtube": {
@@ -80,10 +81,23 @@
    "at": "2026-11-28T21:30-03:00",
    "gate": "PASS",
    "status": "scheduled"
+  },
+  "EP05_youtube": {
+   "youtube_id": "0FYpMwxcemk",
+   "link": "https://youtu.be/0FYpMwxcemk",
+   "at": "2026-12-01T16:00-03:00",
+   "gate": "PASS (01/12 16:00)",
+   "status": "subido por API, privado programado (publishAt 01/12 16:00), IA=sí, portada ok, playlist The Lost Library ok"
   }
  },
  "alerts_emailed": [],
  "notes": [
   "28/11 11:10: gate.py aplica R24 (límite Buffer YouTube) también al episodio que sube por API (R25); por eso EP05 quedó para 01/12 16:00. No se editó gate.py ni rules.json. Propuesta para Felipe/Rastreador: que R24 excluya el episodio subido por API."
+ ],
+ "pending_next_runs": [
+  "cuando S13/S14/S15 tengan id de YouTube (29/11 14:00, 30/11 10:00, 30/11 14:00): jobs/youtube/S1x.json con description_prepend 'Full episode: https://youtu.be/0FYpMwxcemk' (R18 sustituto)",
+  "S11/S12 (hoy 14:00/18:00): jobs/youtube con description_prepend del EP04 (y6zUGM1cUaw)",
+  "verificar Instagram EP05P1 21:30 enviado (R17)",
+  "borrar de v/ los archivos ya enviados"
  ]
 }
