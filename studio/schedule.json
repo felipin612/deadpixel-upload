@@ -23,25 +23,29 @@
   "youtube": {
    "buffer_channel": "6b08732a8541f09ecbb31d59",
    "shorts": [
+    "10:00",
     "14:00",
-    "18:00",
-    "21:00"
+    "18:00"
    ],
    "episode": "16:00"
   }
  },
  "decision": {
   "set_by": "Rastreador",
-  "date": "2026-11-27",
-  "reason": "Narración en inglés: se toma EE.UU. como audiencia principal (HIPÓTESIS: Windsor no devuelve país de la audiencia). Hora del Este (UTC-5) = Buenos Aires - 2 h. YouTube Shorts: datos propios (vistas actuales, 3 publicaciones por franja): 09:56-10:30 BA 189/164/154; 14:50-14:52 BA 140/205/169 con solo 18 h de vida; 23:19-23:22 BA 138/98/44 con 34 h -> la franja nocturna es la más débil (HIPÓTESIS: la edad y el crecimiento del canal también cambian). Se eligen 14:00 (mejor franja propia), 18:00 y 21:00 (Buffer: viernes 16-19 h local = 18-21 BA). Episodio: Buffer da mediodía local para videos largos; lo más cercano permitido (>= 15:00) con margen de producción: 16:00 BA (14:00 ET). TikTok: 15:00, 18:00, 21:00 BA (13, 16 y 19 h ET: ventana 14-18 h de Sprout y pico nocturno de Buffer); 18:00 es donde están las dos únicas publicaciones que tuvieron vistas (17:28 y 18:37). 21:00 es la franja de prueba. Los 3 TikToks de hoy (12:00/16:00/20:00) ya están programados: no se tocan (R10). Instagram: sin datos propios (0 publicaciones). Dash Social: 00:00 local para Reels (02:00 BA, fuera de rango) y peor franja 16-19 h local (18-21 BA) -> 12:30, 22:00 y 23:30 BA; Parte 1 a las 21:30.",
+  "date": "2026-11-28",
+  "reason": "YouTube Shorts: se cambia 21:00 por 10:00 (10:00, 14:00, 18:00). Datos propios con 3 publicaciones por franja (vistas totales, Windsor youtube_public 28/11 09:05 BA): 09:56-10:30 BA 1.203/1.212/1.255 (~47 h de vida); 14:50-14:52 BA 534/1.166/803 (~42 h) y S10 a las 14:01 del 27/11 1.233 en 19 h; 23:19-23:22 BA 270/186/113 (~79 h). La franja nocturna es la más débil y la de la mañana la más fuerte (la edad de los videos y el cambio de ganchos/voz también influyen: no es causa probada). 18:00 queda como franja de prueba de YouTube (S12 la estrena hoy). Los Shorts se programan con un día de margen, así que 10:00 no choca con la producción de las 09:31. TikTok: se mantienen 15:00/18:00/21:00 (21:00 sigue de prueba hasta el 30/11; no se cambia un experimento a mitad). Dato nuevo: los 2 TikToks con vistas tuvieron 97,3% y 75,4% de público de Argentina (+22,4% Paraguay) y solo 2,3%/0,5% de EE.UU.: TikTok reparte a la zona de la cuenta, así que la hora local del público es la de Buenos Aires (Sprout/Buffer en hora local aplican directo). Instagram: Buffer no da métricas (Sin información): se mantienen 12:30/22:00/23:30 y Parte 1 21:30. Episodio: 16:00 se mantiene; los 5 videos largos tienen 2-47 vistas en franjas de 15:09 a 23:18, la hora no explica la diferencia (r007).",
   "evidence": [
-   "YouTube Shorts (Windsor youtube_public, vistas totales al 27/11 09:10 BA): S01 138, S02 98, S03 44 (25/11 23:19-23:22); S04 189, S05 164, S06 154 (26/11 09:56-10:30); S07 140, S08 205, S09 169 (26/11 14:50-14:52). 3 publicaciones por franja; la edad de los videos no es la misma.",
-   "Episodios YouTube: EP01 42 (25/11 23:18), EP02 0 (26/11 13:38), EP03 10 (26/11 15:09), The Gas Station 21 (25/11 17:31).",
-   "TikTok (Windsor): 17:28 BA 171 vistas; 18:37 BA 154 vistas (1 publicación por hora -> HIPÓTESIS). 23:35-23:47 BA: 4 publicaciones, 0 vistas (100% tráfico del perfil propio). 09:58-10:01: 2 con 0. 13:35: 1 con 0. El problema de 0 vistas (r001) es de toda la cuenta: la hora no se puede aislar.",
-   "Instagram: 0 publicaciones (Sin información).",
-   "País de la audiencia: Sin información (Windsor devuelve vacío en TikTok y YouTube)."
+   "YouTube Shorts por franja (Windsor youtube_public, 28/11 09:05 BA): 23:19-23:22 BA 25/11: S03 270, S02 186, S01 113. 09:56-10:30 BA 26/11: S04 1.203, S05 1.212, S06 1.255. 14:50-14:52 BA 26/11: S07 534, S08 1.166, S09 803. 14:01 BA 27/11: S10 1.233 (19 h).",
+   "Episodios YouTube: Gas Station 28 (25/11 17:31), EP01 47 (25/11 23:18), EP02 2 (26/11 13:38), EP03 12 (26/11 15:09), EP04 4 (27/11 16:02).",
+   "TikTok: 2 de 12 videos con vistas (25/11 17:28 189, 18:37 159); los 10 desde el 25/11 23:35 en 0, incluidos S07-S09 a las 12:00/16:00/20:00 del 27/11. País: 97,3% y 75,4% Argentina; EE.UU. 2,3% y 0,5% (Windsor tiktok_organic).",
+   "Instagram: 4 Reels enviados (27/11 16:33, 21:31, 22:01, 23:30 BA); métricas: Sin información (Buffer devuelve null).",
+   "País de la audiencia de YouTube: Sin información (Windsor youtube devuelve 0 filas)."
   ],
   "sources": [
+   {
+    "title": "Buffer – Best time to post on YouTube (1,8 M videos, Shorts y largos)",
+    "url": "https://buffer.com/resources/best-time-to-post-on-youtube/"
+   },
    {
     "title": "Buffer – Best time to post on TikTok (7,1 M publicaciones)",
     "url": "https://buffer.com/resources//best-time-to-post-on-tiktok/"
@@ -51,20 +55,25 @@
     "url": "https://sproutsocial.com/insights/best-times-to-post-on-tiktok/"
    },
    {
-    "title": "Buffer – Best time to post on YouTube (1,8 M videos, Shorts y largos)",
-    "url": "https://buffer.com/resources/best-time-to-post-on-youtube/"
-   },
-   {
     "title": "Dash Social – Best time to post on Instagram (323.000 Reels)",
     "url": "https://www.dashsocial.com/blog/best-time-to-post-on-instagram"
    }
   ],
-  "experiment": {
-   "platform": "tiktok",
-   "slot": "21:00",
-   "from": "2026-11-28",
-   "until": "2026-11-30",
-   "measure": "vistas a 24 h y retención a 3 s del TikTok de 21:00 contra los de 15:00 y 18:00 del mismo día (Windsor tiktok_organic). Única variable: la hora."
-  }
+  "experiment": [
+   {
+    "platform": "tiktok",
+    "slot": "21:00",
+    "from": "2026-11-28",
+    "until": "2026-11-30",
+    "measure": "vistas a 24 h y retención a 3 s del TikTok de 21:00 contra 15:00 y 18:00 del mismo día (Windsor tiktok_organic). Única variable: la hora."
+   },
+   {
+    "platform": "youtube",
+    "slot": "18:00",
+    "from": "2026-11-28",
+    "until": "2026-11-30",
+    "measure": "vistas a 24 h del Short de 18:00 contra los de 10:00 y 14:00 (Windsor youtube_public). Única variable: la hora."
+   }
+  ]
  }
 }
