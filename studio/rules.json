@@ -216,6 +216,70 @@
    ],
    "check": "auto",
    "text": "Narration made with the user's chosen voice (studio/voice.json: Chatterbox default voice) through the TTS workflow: narration/<ID>/ must hold .json markers with engine chatterbox."
+  },
+  {
+   "id": "R20-gate-current",
+   "research": "r004",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+   ],
+   "check": "auto",
+   "text": "No post is recorded (gate.py record) unless its compliance report says pass:true, covers every rule enabled at that moment and was checked for the same publish time. S07 Instagram went out with GATE FAIL and S07-S09 TikTok with a report from before R12/R13/R15 existed (r004, r006)."
+  },
+  {
+   "id": "R21-tiktok-circuit-breaker",
+   "research": "r001",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "auto",
+   "text": "If the last 3 TikToks with 24 h Buffer metrics all have 0 views, no new TikTok is scheduled for 7 days after the newest of them (keep producing for YouTube and Instagram). r001 failed: R1-R5 did not bring views back."
+  },
+  {
+   "id": "R22-tiktok-country-log",
+   "research": "r009",
+   "platforms": [
+    "tiktok"
+   ],
+   "check": "confirm",
+   "text": "Once each TikTok has views, write its viewer countries (Windsor tiktok_organic video_audience_countries) in research doc r009. Do not change the account region, language or device to chase a country: only one variable at a time (experiment in r009)."
+  },
+  {
+   "id": "R23-beat-by-8s",
+   "research": "r010",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+   ],
+   "kinds": [
+    "short"
+   ],
+   "check": "confirm",
+   "text": "Shorts: a new image and a new fact (reveal) land between 5 and 8 s; no explanation or set-up sentence after the hook. YouTube Shorts lost most viewers between 22% and 38% of their length (s 6-11)."
+  },
+  {
+   "id": "R24-youtube-buffer-limit",
+   "research": "r011",
+   "platforms": [
+    "youtube"
+   ],
+   "check": "auto",
+   "text": "At most 2 YouTube posts through Buffer in any 24 h (Buffer free plan limit for YouTube Shorts). A 3rd post waits for the next free slot."
+  },
+  {
+   "id": "R25-episode-by-api",
+   "research": "r011",
+   "platforms": [
+    "youtube"
+   ],
+   "kinds": [
+    "episode"
+   ],
+   "check": "confirm",
+   "text": "The YouTube episode is uploaded through the YouTube API workflow (repo GitHub Actions, same secrets as youtube_meta.yml), not through Buffer, so Buffer's 2 daily YouTube posts go to Shorts. If the upload workflow does not exist yet, build it before publishing the episode."
   }
  ]
 }

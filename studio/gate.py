@@ -120,6 +120,34 @@ def check(a):
             hm = at.astimezone(TZ).strftime("%H:%M")
             ok = bool(a.at) and hm in [x for x in slots if x]
             why = "%s vs Rastreador slots %s" % (hm if a.at else "no --at given", slots)
+        elif rid == "R20-gate-current":
+            ok, why = True, "enforced by 'gate.py record' (needs this report with pass:true and every enabled rule)"
+        elif rid == "R21-tiktok-circuit-breaker":
+            mets = {p.get("post_id"): {m["type"]: m["value"] for m in (p.get("metrics") or [])}
+                    for p in load(os.path.join(HERE, "metrics", "buffer_posts.json"), [])}
+            now = dt.datetime.now(TZ)
+            aged = [e for e in log if e["platform"] == "tiktok" and when(e["at"]) <= now - dt.timedelta(hours=24)
+                    and "views" in mets.get(e.get("post_id"), {})]
+            aged.sort(key=lambda e: when(e["at"]))
+            last3 = aged[-3:]
+            if len(last3) < 3:
+                ok, why = True, "only %d TikToks with 24 h Buffer metrics: no verdict yet" % len(last3)
+            elif all(mets[e["post_id"]]["views"] == 0 for e in last3):
+                until = when(last3[-1]["at"]) + dt.timedelta(days=7)
+                ok = at >= until
+                why = "last 3 TikToks (%s) have 0 views at 24 h -> TikTok paused until %s" % (
+                    ", ".join(e["id"] for e in last3), until.strftime("%Y-%m-%d %H:%M"))
+            else:
+                ok, why = True, "views of last 3 TikToks at 24 h: %s" % [mets[e["post_id"]]["views"] for e in last3]
+        elif rid == "R24-youtube-buffer-limit":
+            bl = [when(e["at"]) for e in log if e["platform"] == "youtube"
+                  and re.fullmatch(r"[0-9a-f]{24}", str(e.get("post_id", ""))) and e["id"] != a.id]
+            before = [t for t in bl if at - dt.timedelta(hours=24) < t <= at]
+            after = [t for t in bl if at <= t < at + dt.timedelta(hours=24)]
+            ok = len(before) < 2 and len(after) < 2
+            why = "Buffer YouTube posts in the 24 h before/after: %d/%d (max 1 so this is the 2nd)" % (len(before), len(after))
+            if not ok:
+                why += " -> use the next free slot or upload by API (R25)"
         elif rid == "R13-short-length":
             d = probe(a.video)[0]
             ok, why = 30 <= d <= 60, "duration %.1f s (allowed 30-60 s)" % d
@@ -177,6 +205,21 @@ def check(a):
 
 def record(a):
     log = load(LOG, [])
+    rules = load(os.path.join(HERE, "rules.json"), {"rules": []})["rules"]
+    r20 = [r for r in rules if r["id"] == "R20-gate-current" and r.get("enabled") is not False]
+    if r20 and a.platform in r20[0]["platforms"]:
+        rep = load(os.path.join(COMP, "%s_%s.json" % (a.id, a.platform)), None)
+        if not rep:
+            print("REFUSED (R20): no compliance report: run gate.py check first"); return 1
+        need = [r["id"] for r in rules if r.get("enabled") is not False and a.platform in r.get("platforms", [])
+                and ("kinds" not in r or rep.get("kind") in r["kinds"])]
+        have = {x["rule"] for x in rep["results"]}
+        missing = [x for x in need if x not in have]
+        if not rep.get("pass") or missing:
+            print("REFUSED (R20): report pass=%s, rules not checked: %s -> run gate.py check again with the current rules"
+                  % (rep.get("pass"), missing)); return 1
+        if a.at and rep.get("publish_at") != when(a.at).isoformat(timespec="minutes"):
+            print("REFUSED (R20): checked for %s but recorded for %s" % (rep.get("publish_at"), when(a.at).isoformat(timespec="minutes"))); return 1
     log.append({"id": a.id, "platform": a.platform, "sha": sha(a.video), "post_id": a.post_id,
                 "at": when(a.at).isoformat(timespec="minutes")})
     with open(LOG, "w") as f:
