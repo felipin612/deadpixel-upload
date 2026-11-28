@@ -155,7 +155,71 @@
   "text": "This unreleased PS2 train game stopped outside my real house 🚂 Six dark carriage",
   "sentAt": "2026-11-28T15:31:26.200Z",
   "dueAt": "2026-11-28T15:30:00.000Z",
-  "metrics": null
+  "metrics": [
+   {
+    "type": "reactions",
+    "name": "Reactions",
+    "description": "Also called Likes on Instagram. This shows how many people reacted to your post.",
+    "value": 1,
+    "unit": "count"
+   },
+   {
+    "type": "comments",
+    "name": "Comments",
+    "description": "The number of comments and replies your post received. Shows when your post is starting conversations, not just getting seen.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "engagementRate",
+    "name": "Eng. Rate",
+    "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+    "value": 2.63,
+    "unit": "percentage"
+   },
+   {
+    "type": "views",
+    "name": "Views",
+    "description": "How many times your post was viewed. Helps you understand how much attention your content gets.",
+    "value": 77,
+    "unit": "count"
+   },
+   {
+    "type": "shares",
+    "name": "Shares",
+    "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "saves",
+    "name": "Saves",
+    "description": "How many times people saved your post. A strong signal that your content is worth revisiting.",
+    "value": 0,
+    "unit": "count"
+   },
+   {
+    "type": "totalTimeWatched",
+    "name": "Watch Time (min)",
+    "description": "Total time watched in minutes",
+    "value": 1.67,
+    "unit": "count"
+   },
+   {
+    "type": "averageTimeWatched",
+    "name": "Avg. Watch Time (sec)",
+    "description": "How long people watched your Reel for on average. Shows how well it holds attention.",
+    "value": 2.63,
+    "unit": "count"
+   },
+   {
+    "type": "reach",
+    "name": "Reach",
+    "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+    "value": 38,
+    "unit": "count"
+   }
+  ]
  },
  {
   "post_id": "6b0978b01fd46e62e7434129",
@@ -211,14 +275,14 @@
     "type": "totalTimeWatched",
     "name": "Watch Time (min)",
     "description": "Total time watched in minutes",
-    "value": 25.83,
+    "value": 25.85,
     "unit": "count"
    },
    {
     "type": "averageTimeWatched",
     "name": "Avg. Watch Time (sec)",
     "description": "How long people watched your Reel for on average. Shows how well it holds attention.",
-    "value": 8.24,
+    "value": 8.21,
     "unit": "count"
    },
    {
@@ -882,7 +946,7 @@
     "type": "reactions",
     "name": "Reactions",
     "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
-    "value": 6,
+    "value": 7,
     "unit": "count"
    },
    {
@@ -896,14 +960,14 @@
     "type": "engagementRate",
     "name": "Eng. Rate",
     "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 3.9,
+    "value": 4.35,
     "unit": "percentage"
    },
    {
     "type": "views",
     "name": "Video Views",
     "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 154,
+    "value": 161,
     "unit": "count"
    },
    {
@@ -917,21 +981,21 @@
     "type": "reach",
     "name": "Reach",
     "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 51,
+    "value": 154,
     "unit": "count"
    },
    {
     "type": "totalTimeWatched",
     "name": "Watch Time (min)",
     "description": "The total time people spent watching your video, added up over every view.",
-    "value": 12.5,
+    "value": 13.37,
     "unit": "count"
    },
    {
     "type": "averageTimeWatched",
     "name": "Avg. Watch Time (sec)",
     "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 3,
+    "value": 3.08,
     "unit": "count"
    }
   ]
@@ -1160,14 +1224,14 @@
     "type": "engagementRate",
     "name": "Eng. Rate",
     "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
-    "value": 2.87,
+    "value": 2.65,
     "unit": "percentage"
    },
    {
     "type": "views",
     "name": "Video Views",
     "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
-    "value": 174,
+    "value": 189,
     "unit": "count"
    },
    {
@@ -1181,21 +1245,21 @@
     "type": "reach",
     "name": "Reach",
     "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
-    "value": 49,
+    "value": 171,
     "unit": "count"
    },
    {
     "type": "totalTimeWatched",
     "name": "Watch Time (min)",
     "description": "The total time people spent watching your video, added up over every view.",
-    "value": 16.52,
+    "value": 18.47,
     "unit": "count"
    },
    {
     "type": "averageTimeWatched",
     "name": "Avg. Watch Time (sec)",
     "description": "How long people watched your video for on average. Shows how well the video holds attention.",
-    "value": 3.62,
+    "value": 2.99,
     "unit": "count"
    }
   ]
