@@ -1,12 +1,17 @@
 {
- "stage": "voz_pending",
+ "stage": "render_shorts",
  "started": "2026-11-28T09:35-03:00",
  "updated": "2026-11-28T09:45-03:00",
  "voice": "Chatterbox via TTS workflow",
  "done": [
   "fixloop: 12 docs research; todas las acciones ya son reglas R1-R25 (sin not_applied/failed)",
   "guion S13-S15 + EP05 LAMPLIGHT (faro en Merrow Lake; regla: contar botes en cada barrido, si hay uno más apagar la luz; pista nueva: todos los juegos usan el mismo mapa MERROW.MAP y el faro apunta a 14 Merrow Road)",
-  "TTS jobs S13-S15 y EP05 empujados (Chatterbox)"
+  "TTS jobs S13-S15 y EP05 empujados (Chatterbox)",
+  "escenas EP05 (engine/scenes5.js, screens5.js) + sh13-sh15",
+  "portadas EP05: 10 candidatas, finalistas c02 (principal, covers/EP05_16x9.jpg), c06, c07",
+  "voz S13-S15 Chatterbox (30,3/32,5/30,2 s)",
+  "R25: workflow youtube_upload.yml + tools/youtube_upload_api.py (subida del episodio por API, programado con publishAt)",
+  "textos de publicación S13-S15 + EP05P1 (studio/posts, studio/shorts5)"
  ],
  "posts": {},
  "alerts_emailed": [],
