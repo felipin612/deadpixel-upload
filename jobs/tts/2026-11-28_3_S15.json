@@ -8,5 +8,13 @@
    "exaggeration": 0.5,
    "cfg_weight": 0.5
   }
+ ],
+ "done": true,
+ "result": [
+  {
+   "name": "S15",
+   "seconds": 30.2,
+   "render_seconds": 124.0
+  }
  ]
 }

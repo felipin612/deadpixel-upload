@@ -8,5 +8,13 @@
    "exaggeration": 0.5,
    "cfg_weight": 0.5
   }
+ ],
+ "done": true,
+ "result": [
+  {
+   "name": "S13",
+   "seconds": 30.3,
+   "render_seconds": 128.0
+  }
  ]
 }
