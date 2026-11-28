@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 22.79,
+ "text": "I wanted to know what the game was doing, so I did something I had never done with a Dead Pixel disc. I put it in my computer and looked at the files.\n\nThere was almost nothing there. A sound bank. A font. A tiny program. And one map file, much bigger than everything else put together.\n\nMERROW dot MAP.\n\nI found an old level viewer online, one of those fan tools from the early two thousands, and I opened it. I expected a lighthouse and a pier. I got a whole lake."
+}

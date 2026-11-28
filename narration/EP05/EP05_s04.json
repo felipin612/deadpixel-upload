@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 30.18,
+ "text": "So I kept the light. And it's a good game. Quiet, slow, strangely calm. You wind the clockwork so the lens keeps turning. Every time the beam passes over the lake, you click the counter once for every boat it touches. At the end of the hour you write the number in the log, the time, the weather. Fog, rain, clear.\n\nThe boats are tiny, low-poly, two triangles for a sail and a dot of yellow for the lamp. They drift. They never come close. Eight of them, every hour, all night.\n\nWhen you quit, the game doesn't ask if you want to save. It saves anyway. One file on the memory card, with a little lighthouse icon."
+}

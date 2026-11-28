@@ -99,5 +99,78 @@
    "exaggeration": 0.5,
    "cfg_weight": 0.5
   }
+ ],
+ "done": true,
+ "result": [
+  {
+   "name": "EP05_s01",
+   "seconds": 27.1,
+   "render_seconds": 106.0
+  },
+  {
+   "name": "EP05_s02",
+   "seconds": 29.3,
+   "render_seconds": 118.9
+  },
+  {
+   "name": "EP05_s03",
+   "seconds": 30.3,
+   "render_seconds": 123.1
+  },
+  {
+   "name": "EP05_s04",
+   "seconds": 30.2,
+   "render_seconds": 119.6
+  },
+  {
+   "name": "EP05_s05",
+   "seconds": 28.6,
+   "render_seconds": 111.5
+  },
+  {
+   "name": "EP05_s06",
+   "seconds": 23.9,
+   "render_seconds": 94.4
+  },
+  {
+   "name": "EP05_s07",
+   "seconds": 26.2,
+   "render_seconds": 103.4
+  },
+  {
+   "name": "EP05_s08",
+   "seconds": 25.4,
+   "render_seconds": 98.3
+  },
+  {
+   "name": "EP05_s09",
+   "seconds": 22.8,
+   "render_seconds": 88.9
+  },
+  {
+   "name": "EP05_s10",
+   "seconds": 26.4,
+   "render_seconds": 104.7
+  },
+  {
+   "name": "EP05_s11",
+   "seconds": 28.4,
+   "render_seconds": 114.2
+  },
+  {
+   "name": "EP05_s12",
+   "seconds": 23.0,
+   "render_seconds": 89.3
+  },
+  {
+   "name": "EP05_s13",
+   "seconds": 22.9,
+   "render_seconds": 90.4
+  },
+  {
+   "name": "EP05_s14",
+   "seconds": 30.2,
+   "render_seconds": 121.9
+  }
  ]
 }

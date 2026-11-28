@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 28.42,
+ "text": "And there was one more thing in the map.\n\nAt the end of the pier, the lighthouse. And the beam was not turning. In the editor, with the game code switched off, the light was fixed. Pointing at one building on the shore.\n\nAn old boathouse. Wooden walls, a sloping roof, a door facing the water. The editor showed its name in a little label over the roof.\n\nFourteen Merrow Road.\n\nThe studio's address. The place J. Kell started Dead Pixel, in her father's boathouse, after he drowned in that lake in 1961.\n\nThe light was never there for the boats. It was there to show something the way home."
+}

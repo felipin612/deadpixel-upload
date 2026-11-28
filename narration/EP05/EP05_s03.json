@@ -1,0 +1,11 @@
+{
+ "engine": "chatterbox",
+ "ref": null,
+ "params": {
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "temperature": 0.8
+ },
+ "seconds": 30.34,
+ "text": "The title screen is a lighthouse at the end of a long wooden pier. Not on the sea. On a lake. Pine trees on the far shore, a thin moon, and the beam turning slowly over the water, lighting the mist in one long pale stripe.\n\nYou press start and you are already in the lamp room, at the top of a spiral staircase, beside the big glass lens. There's a brass handle to wind the clockwork, a logbook on a small desk, and a counter clicker on a string.\n\nA single line of text sits at the bottom of the screen.\n\nCount the boats on every sweep. If there is one more than you counted, put the light out."
+}
