@@ -24,7 +24,8 @@
   "20:35 metrics export (25 posts sent, 30 días)",
   "21:35 metrics export (26 posts sent, 30 días)",
   "22:20 buzón: o003 Reels Instagram verificados (S08 sent como reel) + informe TikTok enviado + r008",
-  "22:35 metrics export (27 posts sent, 30 días)"
+  "22:35 metrics export (27 posts sent, 30 días)",
+  "23:33 metrics export (28 posts sent, 30 días); 23:31: día completo, sin mail pendiente (8b no aplica)"
  ],
  "posts": {
   "S07_instagram": {
@@ -118,7 +119,7 @@
   "27/11 12:37: Instagram desconectado en Buffer (S07 12:30 en error 'lost authorization'). Alerta enviada a Felipe. Buffer permite solo 2 posts de YouTube por día (plan): S11/S12 Shorts pasan al 28/11 14:00/18:00; las franjas de YouTube del 28/11 ya quedan ocupadas (el batch del 28 tendrá que usar 21:00/episodio o el 29).",
   "27/11 22:20 (buzón): orden o003 de Felipe (21:56): publicar Reels de Instagram (ya en marcha, verificado) + analizar vistas bajas en TikTok (informe enviado; encargo r008 para Analista/Rastreador con medición de S10-S12 a 24 h y mail a Felipe con el resultado)."
  ],
- "metrics_exported_at": "2026-11-27T22:35-03:00",
+ "metrics_exported_at": "2026-11-27T23:33-03:00",
  "alerts_emailed": [
   {
    "alert": "gate_fail_youtube_tiktok_R3_R14_R18",
