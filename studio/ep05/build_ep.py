@@ -45,7 +45,7 @@ if tempo < 1.0:
         res.append(sf.read(f'{D}/tmp2.wav')[0])
     scenes = res
 speech = sum(len(s) for s in scenes) / SR
-hold = max(1.5, min(9.0, (TARGET - INTRO - speech) / 14))
+hold = max(1.5, min(9.7, (TARGET - INTRO - speech) / 14))
 plan, parts, chapters, t = [], [], [], 0.0
 for i, s in enumerate(scenes):
     d = round(len(s) / SR + hold, 3)

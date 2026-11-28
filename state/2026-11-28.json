@@ -1,7 +1,7 @@
 {
- "stage": "episode_voz_pending",
+ "stage": "render_episode",
  "started": "2026-11-28T09:35-03:00",
- "updated": "2026-11-28T09:55-03:00",
+ "updated": "2026-11-28T10:33-03:00",
  "voice": "Chatterbox via TTS workflow",
  "done": [
   "fixloop: 12 docs research; todas las acciones ya son reglas R1-R25 (sin not_applied/failed)",
@@ -12,7 +12,10 @@
   "voz S13-S15 Chatterbox (30,3/32,5/30,2 s)",
   "R25: workflow youtube_upload.yml + tools/youtube_upload_api.py (subida del episodio por API, programado con publishAt)",
   "textos de publicación S13-S15 + EP05P1 (studio/posts, studio/shorts5)",
-  "S13-S15 render 9:16 (30,2/32,3/30,0 s) y programados (GATE PASS): YouTube 29/11 14:00, 30/11 10:00, 30/11 14:00 (R24: hoy 14:00/18:00 ocupados por S11/S12); TikTok 29/11 15:00/18:00/21:00; Instagram 29/11 12:30/22:00/23:30"
+  "S13-S15 render 9:16 (30,2/32,3/30,0 s) y programados (GATE PASS): YouTube 29/11 14:00, 30/11 10:00, 30/11 14:00 (R24: hoy 14:00/18:00 ocupados por S11/S12); TikTok 29/11 15:00/18:00/21:00; Instagram 29/11 12:30/22:00/23:30",
+  "voz EP05 Chatterbox (14 escenas, 375 s de habla; build_ep: pausas + atempo 0.93 + pausas 9,6 s → 10:15)",
+  "render EP05 16:9 en curso (3 workers) + Parte 1 9:16 (build_p1.py)",
+  "metadata EP05 (studio/ep05/EP05_upload.json, capítulos)"
  ],
  "posts": {
   "S13_youtube": {
