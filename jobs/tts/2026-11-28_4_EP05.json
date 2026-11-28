@@ -1,0 +1,103 @@
+{
+ "out_dir": "narration/EP05",
+ "items": [
+  {
+   "name": "EP05_s01",
+   "text": "Every night, this game showed me one more boat than there was.\n\nEight fishing boats on a black lake, each with a small yellow lamp at the bow. I counted them on every sweep of the light, the way the game tells you to. One, two, three, all the way to eight. And then, low on the water, just past the last one, a ninth lamp. No hull under it. No mast. No wake. Just a lamp, sitting on the water like someone was holding it up from below.\n\nThe counter in the corner of the screen said eight.\n\nLet me go back to the beginning.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s02",
+   "text": "The disc came wrapped in a page torn out of a logbook. Ruled lines, a column for the time, a column for the weather, a column headed BOATS. Every line on the page was filled in by hand, and every line said the same thing. Eight.\n\nInside was a black PlayStation 2 case with a small square drawn on the front. If you have watched this channel before, you know that square. Dead Pixel Studios. The studio that worked from 2001 to 2004 and never released a single game.\n\nOn the spine, in white marker: LAMPLIGHT. And under it, smaller: count every sweep.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s03",
+   "text": "The title screen is a lighthouse at the end of a long wooden pier. Not on the sea. On a lake. Pine trees on the far shore, a thin moon, and the beam turning slowly over the water, lighting the mist in one long pale stripe.\n\nYou press start and you are already in the lamp room, at the top of a spiral staircase, beside the big glass lens. There's a brass handle to wind the clockwork, a logbook on a small desk, and a counter clicker on a string.\n\nA single line of text sits at the bottom of the screen.\n\nCount the boats on every sweep. If there is one more than you counted, put the light out.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s04",
+   "text": "So I kept the light. And it's a good game. Quiet, slow, strangely calm. You wind the clockwork so the lens keeps turning. Every time the beam passes over the lake, you click the counter once for every boat it touches. At the end of the hour you write the number in the log, the time, the weather. Fog, rain, clear.\n\nThe boats are tiny, low-poly, two triangles for a sail and a dot of yellow for the lamp. They drift. They never come close. Eight of them, every hour, all night.\n\nWhen you quit, the game doesn't ask if you want to save. It saves anyway. One file on the memory card, with a little lighthouse icon.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s05",
+   "text": "The second night, the ninth lamp showed up.\n\nIt was on the third sweep after midnight. The beam crossed the lake, touched eight boats, and then touched something else. A ninth light, very low, right at the edge of the mist. I clicked the counter nine times, because that is what I saw.\n\nThe counter said eight.\n\nI clicked it again. Eight. The game would not let me count it. And the rule was clear: if there is one more than you counted, put the light out. There is a big iron shutter beside the lens for that. One pull, and the lake goes dark.\n\nI didn't pull it. I wanted to see what it was.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s06",
+   "text": "That was a mistake, and the game knew it.\n\nOn the next sweep, the ninth lamp was closer. Not by much. Maybe one boat length. But the other eight had stayed exactly where they were, and this one had moved toward the pier against the wind.\n\nI wrote it in the log anyway. Nine. The pencil in the game writes slowly, one letter at a time. When it finished, it crossed my nine out by itself and wrote eight above it, in a different handwriting. Smaller. Neater. Somebody older.\n\nSo I started reading the log from the beginning.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s07",
+   "text": "The log has forty pages. The last keeper filled in thirty nine of them. Night after night, the same neat handwriting, the same number. Eight. Eight. Eight. Never a ninth boat. Not once in thirty nine pages.\n\nThen I reached the last line he wrote.\n\nEight boats, and one for Rowe.\n\nIf you have been following this channel, you know that name. T. Rowe, the tester. The man with the dead pixel in his eye. Missing since the third of March, 2004.\n\nThe date on that last line was the third of March, 2004.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s08",
+   "text": "After that I played with a notebook next to me. A real one, on my real desk.\n\nEvery hour I wrote down what the game showed me. And every hour the ninth lamp was closer. Past the first buoy. Past the second. By the fourth night it was close enough that the beam showed what it really was: a little rowing boat with no one sitting in it, and an oil lamp hanging from a hook at the front.\n\nThe oars were moving.\n\nThere was nobody holding them, and the oars were moving, slow and even, the way a person rows when they know exactly where they are going.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s09",
+   "text": "I wanted to know what the game was doing, so I did something I had never done with a Dead Pixel disc. I put it in my computer and looked at the files.\n\nThere was almost nothing there. A sound bank. A font. A tiny program. And one map file, much bigger than everything else put together.\n\nMERROW dot MAP.\n\nI found an old level viewer online, one of those fan tools from the early two thousands, and I opened it. I expected a lighthouse and a pier. I got a whole lake.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s10",
+   "text": "I turned the camera around slowly.\n\nOn the north shore, wrapped in fog, there was a small town. Empty streets, a church, a row of houses. The town from SALTMARSH.\n\nOut in the middle, on the frozen part of the water, there was an ice fishing hut with a hole cut in the floor. STILLWATER.\n\nBy the old rail bridge to the east there was a signal box on stilts, with one lamp in the window. SIGNALMAN.\n\nEvery game Dead Pixel ever made was built on the same map. The same lake, seen from different places. Merrow Lake.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s11",
+   "text": "And there was one more thing in the map.\n\nAt the end of the pier, the lighthouse. And the beam was not turning. In the editor, with the game code switched off, the light was fixed. Pointing at one building on the shore.\n\nAn old boathouse. Wooden walls, a sloping roof, a door facing the water. The editor showed its name in a little label over the roof.\n\nFourteen Merrow Road.\n\nThe studio's address. The place J. Kell started Dead Pixel, in her father's boathouse, after he drowned in that lake in 1961.\n\nThe light was never there for the boats. It was there to show something the way home.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s12",
+   "text": "I put the disc back in the PlayStation. I had to know where the little boat was.\n\nThe game loaded straight into the lamp room. No title screen. The clockwork was already wound. I walked to the glass and waited for the beam to come around.\n\nEight boats, right where they always were.\n\nAnd at the bottom of the pier, tied to the last post with a short rope, the rowing boat. Empty. The lamp on its hook still burning.\n\nThe counter in the corner of the screen said zero.\n\nThen, from the bottom of the staircase, I heard the door open.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s13",
+   "text": "I didn't wait. I grabbed the iron shutter and pulled it all the way down.\n\nThe lens went black. The whole lake went black. The eight little boat lamps went out one after another, like someone was walking past them and blowing them out. Then the screen faded, and a text box came up.\n\nLight out. Thank you, keeper.\n\nThe game saved. The memory card screen showed one file with the lighthouse icon. Under it, where the play time should be, it said: nine keepers.\n\nI turned the console off and sat there in the dark.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  },
+  {
+   "name": "EP05_s14",
+   "text": "When I finally looked up, there was a light outside my window.\n\nSmall. Yellow. Very low, like someone was holding a lamp close to the ground at the end of my street. It did not move for a long time. Then it went out, the way the boat lamps went out in the game. Like someone walking past and blowing it out.\n\nI still have the disc. I haven't played it since. But every night, somewhere around three, I count the lights on my street. One, two, three.\n\nAnd every night, there is one more than there should be.\n\nIf you know anything about Dead Pixel Studios, or about Merrow Lake, leave it in the comments. And subscribe, because there are still more discs.",
+   "ref": null,
+   "exaggeration": 0.5,
+   "cfg_weight": 0.5
+  }
+ ]
+}
